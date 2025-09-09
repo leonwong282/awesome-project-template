@@ -34,7 +34,7 @@ We welcome many different types of contributions including:
 
 ### Before Contributing
 
-1. Check if there's already an [issue](https://github.com/leonwong282/project-name/issues) for your contribution
+1. Check if there's already an [issue](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues) for your contribution
 2. For major changes, please open an issue first to discuss what you would like to change
 3. Make sure your contribution aligns with the project's goals and roadmap
 
@@ -55,8 +55,8 @@ We welcome many different types of contributions including:
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/leonwong282/project-name.git
-   cd project-name
+   git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git
+   cd simple-beatiful-open-project-templete
    ```
 
 3. **Add upstream remote**
@@ -361,7 +361,7 @@ If you need help with contributing:
 
 - 💬 [Join our Discord](https://discord.gg/your-discord)
 - 📧 Email us at: contribute@your-project.com
-- 📝 [Open a discussion](https://github.com/leonwong282/project-name/discussions)
+- 📝 [Open a discussion](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
 - 🐦 Tweet us [@your-handle](https://twitter.com/your-handle)
 
 ## 📋 Contributor Checklist

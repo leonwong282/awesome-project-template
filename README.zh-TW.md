@@ -2,15 +2,15 @@
 
 <div align="center">
 
-# 🚀 專案名稱
+# 🚀 Simple Beautiful Open Project Template
 
 > 一個現代、美觀且結構良好的開源專案模板
 
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-GPL--3.0-red?style=for-the-badge)
-![Build](https://img.shields.io/badge/Build-Passing-green?style=for-the-badge)
+![Template](https://img.shields.io/badge/Template-Ready-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-purple?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/leonwong282/project-name?style=for-the-badge&color=yellow)
+![Stars](https://img.shields.io/github/stars/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=yellow)
 
 [🌍 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md) 
 
@@ -25,18 +25,18 @@
 ![Status](https://img.shields.io/badge/Status-Alpha-red?style=for-the-badge)
 
 📊 統計資料:
-![Downloads](https://img.shields.io/github/downloads/leonwong282/project-name/total?style=for-the-badge&color=blue)
-![Forks](https://img.shields.io/github/forks/leonwong282/project-name?style=for-the-badge&color=green)
-![Issues](https://img.shields.io/github/issues/leonwong282/project-name?style=for-the-badge&color=orange)
-![Contributors](https://img.shields.io/github/contributors/leonwong282/project-name?style=for-the-badge&color=purple)
+![Downloads](https://img.shields.io/github/downloads/leonwong282/simple-beatiful-open-project-templete/total?style=for-the-badge&color=blue)
+![Forks](https://img.shields.io/github/forks/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=green)
+![Issues](https://img.shields.io/github/issues/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=orange)
+![Contributors](https://img.shields.io/github/contributors/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=purple)
 
 🌐 語言與國際化:
 ![Internationalization](https://img.shields.io/badge/i18n-2_Languages-orange?style=for-the-badge)
 
 💼 維護狀態:
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/leonwong282/project-name?style=for-the-badge&color=blue)
-![Release](https://img.shields.io/github/v/release/leonwong282/project-name?style=for-the-badge&color=purple)
+![Last Commit](https://img.shields.io/github/last-commit/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=blue)
+![Release](https://img.shields.io/github/v/release/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=purple)
 -->
 
 ## ✨ 特色功能
@@ -72,8 +72,8 @@
 
 1. **複製儲存庫**
    ```bash
-   git clone https://github.com/leonwong282/project-name.git
-   cd project-name
+   git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git
+   cd simple-beatiful-open-project-templete
    ```
 
 2. **安裝相依性**
