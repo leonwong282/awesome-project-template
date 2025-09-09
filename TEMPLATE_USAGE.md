@@ -2,7 +2,9 @@
 
 This document provides step-by-step instructions on how to use this GitHub repository template to create your own modern open-source project.
 
-## 🚀 Quick Start (Using GitHub Template)
+## 🚀 Quick Start
+
+Choose one of the following methods to create your project from this template:
 
 ### Method 1: Use This Template Button (Recommended)
 
@@ -37,6 +39,44 @@ git commit -m "Initial commit from template"
 # Add your remote origin
 git remote add origin https://github.com/leonwong282/your-project-name.git
 git push -u origin main
+```
+
+### Method 3: GitHub CLI (Command Line)
+
+Prerequisites: Install [GitHub CLI](https://cli.github.com/) and authenticate with `gh auth login`
+
+```bash
+# Create a new repository from this template
+gh repo create your-project-name \
+  --template leonwong282/simple-beatiful-open-project-templete \
+  --public \
+  --clone \
+  --include-all-branches
+
+# Navigate to the new project
+cd your-project-name
+
+# Start customizing your project
+echo "Ready to customize your project!"
+```
+
+**GitHub CLI Options Explained:**
+- `--template` - Specifies the template repository to use
+- `--public` - Makes the repository public (use `--private` for private repos)
+- `--clone` - Automatically clones the repository to your local machine
+- `--include-all-branches` - Includes all branches from the template (optional)
+- `-d "Description"` - Add a repository description
+- `--homepage "URL"` - Set repository homepage URL
+
+**Advanced Example:**
+```bash
+# Create with description and homepage
+gh repo create my-awesome-project \
+  --template leonwong282/simple-beatiful-open-project-templete \
+  --public \
+  --clone \
+  --description "My awesome project built from template" \
+  --homepage "https://my-awesome-project.com"
 ```
 
 ## 📝 Customization Checklist

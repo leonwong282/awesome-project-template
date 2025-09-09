@@ -55,8 +55,8 @@ Welcome to the Project Name documentation! Here you'll find comprehensive guides
 | Configuration | Setup and customization | [Configuration](CONFIGURATION.md) |
 | API Docs | API reference and examples | [API Reference](API_REFERENCE.md) |
 | Contributing | Join the development | [Contributing](../CONTRIBUTING.md) |
-| Issues | Report bugs or request features | [GitHub Issues](https://github.com/leonwong282/project-name/issues) |
-| Discussions | Community discussions | [GitHub Discussions](https://github.com/leonwong282/project-name/discussions) |
+| Issues | Report bugs or request features | [GitHub Issues](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues) |
+| Discussions | Community discussions | [GitHub Discussions](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions) |
 
 ## 🔍 Search Tips
 
@@ -84,7 +84,7 @@ If you can't find what you're looking for:
 1. **Search existing documentation** thoroughly
 2. **Check GitHub issues** for similar questions
 3. **Open a documentation issue** using our [template](../.github/ISSUE_TEMPLATE/documentation.yml)
-4. **Start a discussion** in our [GitHub Discussions](https://github.com/leonwong282/project-name/discussions)
+4. **Start a discussion** in our [GitHub Discussions](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
 5. **Contribute** by adding the missing documentation yourself!
 
 ---

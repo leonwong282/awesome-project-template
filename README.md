@@ -60,23 +60,44 @@
 
 ## 🚀 Quick Start
 
+### Using as Template
+
+This repository is designed as a GitHub template. You can create a new project from it using:
+
+**Method 1: GitHub Web Interface (Recommended)**
+1. Click the "Use this template" button above
+2. Configure your new repository
+3. Start coding!
+
+**Method 2: GitHub CLI**
+```bash
+gh repo create your-project-name \
+  --template leonwong282/simple-beatiful-open-project-templete \
+  --public --clone
+```
+
+**Method 3: Manual Clone**
+```bash
+git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git your-project
+cd your-project
+rm -rf .git && git init
+```
+
+📖 **For detailed instructions, see [TEMPLATE_USAGE.md](TEMPLATE_USAGE.md)**
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v18.0.0 or higher)
 - [Git](https://git-scm.com/)
-- [Your specific requirements]
+- [GitHub CLI](https://cli.github.com/) (optional, for Method 2)
 
-### Installation
+### Development Setup (After Using Template)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git
-   cd simple-beatiful-open-project-templete
-   ```
+Once you've created your project from this template:
 
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    npm install
    # or
@@ -85,20 +106,20 @@ Before you begin, ensure you have the following installed:
    pnpm install
    ```
 
-3. **Set up environment variables**
+2. **Set up environment variables**
    ```bash
    cp .env.example .env.local
    # Edit .env.local with your configuration
    ```
 
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-5. **Open your browser**
+4. **Open your browser**
   
    Navigate to [http://localhost:3000](http://localhost:3000)
 

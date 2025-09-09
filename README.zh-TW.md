@@ -60,23 +60,44 @@
 
 ## 🚀 快速開始
 
+### 使用模板
+
+此儲存庫設計為 GitHub 模板。您可以使用以下方式建立新專案：
+
+**方法一：GitHub 網頁介面（推薦）**
+1. 點擊上方的「Use this template」按鈕
+2. 配置您的新儲存庫
+3. 開始編程！
+
+**方法二：GitHub CLI**
+```bash
+gh repo create your-project-name \
+  --template leonwong282/simple-beatiful-open-project-templete \
+  --public --clone
+```
+
+**方法三：手動複製**
+```bash
+git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git your-project
+cd your-project
+rm -rf .git && git init
+```
+
+📖 **詳細說明請參閱 [TEMPLATE_USAGE.md](TEMPLATE_USAGE.md)**
+
 ### 系統需求
 
 開始之前，請確保您已安裝以下軟體：
 
 - [Node.js](https://nodejs.org/) (v18.0.0 或更高版本)
 - [Git](https://git-scm.com/)
-- [您的特定需求]
+- [GitHub CLI](https://cli.github.com/)（可選，用於方法二）
 
-### 安裝步驟
+### 開發環境設定（使用模板後）
 
-1. **複製儲存庫**
-   ```bash
-   git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git
-   cd simple-beatiful-open-project-templete
-   ```
+使用此模板建立專案後：
 
-2. **安裝相依性**
+1. **安裝相依性**
    ```bash
    npm install
    # 或
@@ -85,20 +106,20 @@
    pnpm install
    ```
 
-3. **設定環境變數**
+2. **設定環境變數**
    ```bash
    cp .env.example .env.local
    # 使用您的配置編輯 .env.local
    ```
 
-4. **啟動開發伺服器**
+3. **啟動開發伺服器**
    ```bash
    npm run dev
    # 或
    yarn dev
    ```
 
-5. **開啟瀏覽器**
+4. **開啟瀏覽器**
   
    導航至 [http://localhost:3000](http://localhost:3000)
 

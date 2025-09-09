@@ -27,7 +27,7 @@
     "email": "leonwong282@gmail.com",
     "url": "https://github.com/leonwong282"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leonwong282/simple-beatiful-open-project-templete.git"
@@ -51,40 +51,12 @@
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "@vitest/coverage-v8": "^1.0.4",
-    "@vitest/ui": "^1.0.4",
-    "@playwright/test": "^1.40.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
-    "release-it": "^17.0.1",
-    "rimraf": "^5.0.5",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8",
-    "vite-bundle-analyzer": "^0.7.0",
-    "vitest": "^1.0.4"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md,yml,yaml}": [
-      "prettier --write"
-    ]
-  },
-  "release-it": {
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": false
-    }
+    "vite": "^5.0.8"
   }
 }

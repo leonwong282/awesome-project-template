@@ -61,7 +61,7 @@ We welcome many different types of contributions including:
 
 3. **Add upstream remote**
    ```bash
-   git remote add upstream https://github.com/original-username/project-name.git
+   git remote add upstream https://github.com/leonwong282/simple-beatiful-open-project-templete.git
    ```
 
 4. **Install dependencies**
