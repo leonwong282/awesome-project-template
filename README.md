@@ -261,10 +261,40 @@ See also the list of [contributors](https://github.com/leonwong282/simple-beatif
 
 ## 🙏 Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration sources
-- Third-party libraries
-- Community contributors
+This template was inspired by and built upon the work of many excellent open source projects and communities. We are grateful to:
+
+### 📚 Documentation & Templates
+- **[Best-README-Template](https://github.com/othneildrew/Best-README-Template)** - Excellent README structure and formatting inspiration
+- **[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)** - Changelog format standards
+- **[Contributor Covenant](https://www.contributor-covenant.org/)** - Code of Conduct template
+
+### 🛠️ Development Tools & Standards
+- **[Shields.io](https://shields.io/)** - Beautiful and informative badges
+- **[EditorConfig](https://editorconfig.org/)** - Consistent coding styles across editors
+- **[Semantic Versioning](https://semver.org/spec/v2.0.0.html)** - Version numbering standards
+- **[GitHub](https://github.com/)** - Platform and tools that make open source collaboration possible
+
+### 🎨 UI/UX Inspiration
+- **[GitHub's own templates](https://github.com/github)** - Official GitHub repository templates
+- **[Awesome README](https://github.com/matiassingers/awesome-readme)** - Curated list of awesome READMEs
+- **[readme.so](https://readme.so/)** - README editor and generator
+
+### 🔧 Technical Stack
+- **[Node.js](https://nodejs.org/)** - JavaScript runtime
+- **[Vite](https://vitejs.dev/)** - Build tool and development server
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[React](https://reactjs.org/)** - UI library
+- **[ESLint](https://eslint.org/)** - Code linting
+- **[Prettier](https://prettier.io/)** - Code formatting
+
+### 🌟 Special Thanks
+- **GitHub Community** - For continuous inspiration and feedback
+- **Open Source Contributors** - Who make projects like this possible
+- **Template Users** - Your usage and feedback help improve this template
+
+---
+
+*If you're using this template and want to add your project to our showcase, feel free to [open an issue](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)!*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -141,7 +141,7 @@ npm run start --option value
 
 ```javascript
 // 程式碼範例
-import { ProjectFunction } from 'project-name';
+import { ProjectFunction } from 'simple-beatiful-open-project-templete';
 
 const result = ProjectFunction({
   option1: 'value1',
@@ -209,10 +209,10 @@ npm run build:analyze
 
 ```bash
 # 建置 Docker 映像
-docker build -t project-name .
+docker build -t simple-beatiful-open-project-templete .
 
 # 使用 Docker 執行
-docker run -p 3000:3000 project-name
+docker run -p 3000:3000 simple-beatiful-open-project-templete
 
 # 使用 Docker Compose
 docker-compose up
@@ -243,7 +243,7 @@ docker-compose up
 - [ ] API v2.0 發布
 - [ ] 文件改進
 
-查看[開放議題](https://github.com/leonwong282/project-name/issues)以獲取完整的建議功能和已知問題清單。
+查看[開放議題](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)以獲取完整的建議功能和已知問題清單。
 
 <p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
@@ -257,14 +257,44 @@ docker-compose up
 
 - **Leon Wong** - *初始開發* - [leonwong282](https://github.com/leonwong282)
 
-另請參閱參與此專案的[貢獻者](https://github.com/leonwong282/project-name/contributors)清單。
+另請參閱參與此專案的[貢獻者](https://github.com/leonwong282/simple-beatiful-open-project-templete/contributors)清單。
 
 ## 🙏 致謝
 
-- 感謝所有提供程式碼的開發者
-- 靈感來源
-- 第三方函式庫
-- 社群貢獻者
+此模板的靈感來自於許多優秀開源專案和社群的工作成果。我們感謝：
+
+### 📚 文檔與模板
+- **[Best-README-Template](https://github.com/othneildrew/Best-README-Template)** - 優秀的 README 結構和格式靈感
+- **[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)** - 變更日誌格式標準
+- **[Contributor Covenant](https://www.contributor-covenant.org/)** - 行為準則模板
+
+### 🛠️ 開發工具與標準
+- **[Shields.io](https://shields.io/)** - 美觀且資訊豐富的徽章
+- **[EditorConfig](https://editorconfig.org/)** - 跨編輯器的一致編碼風格
+- **[Semantic Versioning](https://semver.org/spec/v2.0.0.html)** - 版本號碼標準
+- **[GitHub](https://github.com/)** - 使開源協作成為可能的平台和工具
+
+### 🎨 UI/UX 靈感
+- **[GitHub 官方模板](https://github.com/github)** - GitHub 官方儲存庫模板
+- **[Awesome README](https://github.com/matiassingers/awesome-readme)** - 精選的優秀 README 清單
+- **[readme.so](https://readme.so/)** - README 編輯器和產生器
+
+### 🔧 技術堆疊
+- **[Node.js](https://nodejs.org/)** - JavaScript 執行環境
+- **[Vite](https://vitejs.dev/)** - 建置工具和開發伺服器
+- **[TypeScript](https://www.typescriptlang.org/)** - 型別安全的 JavaScript
+- **[React](https://reactjs.org/)** - UI 函式庫
+- **[ESLint](https://eslint.org/)** - 程式碼檢查
+- **[Prettier](https://prettier.io/)** - 程式碼格式化
+
+### 🌟 特別感謝
+- **GitHub 社群** - 持續的靈感和回饋
+- **開源貢獻者** - 讓這樣的專案成為可能
+- **模板使用者** - 您的使用和回饋幫助改進此模板
+
+---
+
+*如果您正在使用此模板並希望將您的專案加入我們的展示，歡迎[開啟議題](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)！*
 
 <p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
@@ -272,8 +302,8 @@ docker-compose up
 
 如果您有任何問題或需要協助，請：
 
-- 📝 [開啟議題](https://github.com/leonwong282/project-name/issues/new)
-- 💬 [開始討論](https://github.com/leonwong282/project-name/discussions)
+- 📝 [開啟議題](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues/new)
+- 💬 [開始討論](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
 - 📧 發送電子郵件至：leonwong282@gmail.com
 - 🌐 造訪我的部落格：[leonwong282.com](https://leonwong282.com/)
 
