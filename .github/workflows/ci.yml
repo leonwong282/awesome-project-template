@@ -1,0 +1,218 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+env:
+  NODE_VERSION: '18'
+  CACHE_KEY: node_modules
+
+jobs:
+  # Job 1: Code Quality & Linting
+  lint:
+    name: 🔍 Code Quality
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          
+      - name: 📥 Install dependencies
+        run: npm ci
+        
+      - name: 🔍 Run ESLint
+        run: npm run lint
+        
+      - name: 🎨 Check Prettier formatting
+        run: npm run format:check
+        
+      - name: 🔒 Security audit
+        run: npm audit --audit-level moderate
+
+  # Job 2: Testing
+  test:
+    name: 🧪 Testing
+    runs-on: ubuntu-latest
+    needs: lint
+    
+    strategy:
+      matrix:
+        node-version: [16, 18, 20]
+        
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          
+      - name: 📥 Install dependencies
+        run: npm ci
+        
+      - name: 🧪 Run unit tests
+        run: npm run test:coverage
+        
+      - name: 📊 Upload coverage reports
+        if: matrix.node-version == 18
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          fail_ci_if_error: true
+
+  # Job 3: End-to-End Testing
+  e2e:
+    name: 🎭 E2E Testing
+    runs-on: ubuntu-latest
+    needs: test
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          
+      - name: 📥 Install dependencies
+        run: npm ci
+        
+      - name: 🏗️ Build application
+        run: npm run build
+        
+      - name: 🎭 Run Playwright tests
+        run: npx playwright test
+        
+      - name: 📸 Upload test results
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+  # Job 4: Build & Deploy
+  build:
+    name: 🏗️ Build & Deploy
+    runs-on: ubuntu-latest
+    needs: [lint, test, e2e]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          
+      - name: 📥 Install dependencies
+        run: npm ci
+        
+      - name: 🏗️ Build application
+        run: npm run build
+        
+      - name: 📦 Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-files
+          path: dist/
+          
+      # Deployment step (uncomment and configure as needed)
+      # - name: 🚀 Deploy to staging
+      #   if: github.ref == 'refs/heads/develop'
+      #   run: npm run deploy:staging
+      #   env:
+      #     DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      #     
+      # - name: 🚀 Deploy to production
+      #   if: github.ref == 'refs/heads/main'
+      #   run: npm run deploy:production
+      #   env:
+      #     DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+
+  # Job 5: Security Scanning
+  security:
+    name: 🔒 Security Scan
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+      
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 🔒 Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          
+      - name: 📊 Upload Trivy scan results
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'
+
+  # Job 6: Release
+  release:
+    name: 🚀 Release
+    runs-on: ubuntu-latest
+    needs: [lint, test, e2e]
+    if: github.event_name == 'release'
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+          
+      - name: 📥 Install dependencies
+        run: npm ci
+        
+      - name: 🏗️ Build application
+        run: npm run build
+        
+      - name: 📦 Publish to NPM
+        if: startsWith(github.ref, 'refs/tags/')
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
+      - name: 🐳 Build and push Docker image
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+          docker build -t $DOCKER_USERNAME/project-name:${{ github.ref_name }} .
+          docker build -t $DOCKER_USERNAME/project-name:latest .
+          docker push $DOCKER_USERNAME/project-name:${{ github.ref_name }}
+          docker push $DOCKER_USERNAME/project-name:latest

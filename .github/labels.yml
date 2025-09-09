@@ -1,0 +1,160 @@
+# Labels for GitHub Issues and Pull Requests
+
+## Priority Labels
+- name: "priority: critical"
+  color: "d73a4a"
+  description: "Critical priority, needs immediate attention"
+
+- name: "priority: high"
+  color: "e99695"
+  description: "High priority"
+
+- name: "priority: medium"
+  color: "fbca04"
+  description: "Medium priority"
+
+- name: "priority: low"
+  color: "0e8a16"
+  description: "Low priority"
+
+## Type Labels
+- name: "bug"
+  color: "d73a4a"
+  description: "Something isn't working"
+
+- name: "enhancement"
+  color: "a2eeef"
+  description: "New feature or request"
+
+- name: "documentation"
+  color: "0075ca"
+  description: "Improvements or additions to documentation"
+
+- name: "question"
+  color: "d876e3"
+  description: "Further information is requested"
+
+- name: "refactor"
+  color: "5319e7"
+  description: "Code refactoring"
+
+- name: "performance"
+  color: "ff7f00"
+  description: "Performance improvements"
+
+- name: "security"
+  color: "b60205"
+  description: "Security related"
+
+- name: "test"
+  color: "c5def5"
+  description: "Testing related"
+
+## Status Labels
+- name: "status: needs triage"
+  color: "ededed"
+  description: "Needs to be triaged"
+
+- name: "status: accepted"
+  color: "0e8a16"
+  description: "Accepted for implementation"
+
+- name: "status: in progress"
+  color: "fbca04"
+  description: "Currently being worked on"
+
+- name: "status: needs review"
+  color: "ff9500"
+  description: "Needs code review"
+
+- name: "status: blocked"
+  color: "d73a4a"
+  description: "Blocked by external dependency"
+
+- name: "status: on hold"
+  color: "fef2c0"
+  description: "On hold"
+
+## Size Labels
+- name: "size: XS"
+  color: "3cbf00"
+  description: "Extra small change"
+
+- name: "size: S"
+  color: "5d9801"
+  description: "Small change"
+
+- name: "size: M"
+  color: "7f7203"
+  description: "Medium change"
+
+- name: "size: L"
+  color: "a14c03"
+  description: "Large change"
+
+- name: "size: XL"
+  color: "c22604"
+  description: "Extra large change"
+
+## Special Labels
+- name: "good first issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+
+- name: "help wanted"
+  color: "008672"
+  description: "Extra attention is needed"
+
+- name: "breaking change"
+  color: "d73a4a"
+  description: "Introduces breaking changes"
+
+- name: "wont fix"
+  color: "ffffff"
+  description: "This will not be worked on"
+
+- name: "duplicate"
+  color: "cfd3d7"
+  description: "This issue or pull request already exists"
+
+- name: "invalid"
+  color: "e4e669"
+  description: "This doesn't seem right"
+
+## Platform Labels
+- name: "platform: web"
+  color: "1f77b4"
+  description: "Web platform specific"
+
+- name: "platform: mobile"
+  color: "ff7f0e"
+  description: "Mobile platform specific"
+
+- name: "platform: desktop"
+  color: "2ca02c"
+  description: "Desktop platform specific"
+
+- name: "platform: api"
+  color: "d62728"
+  description: "API specific"
+
+## Component Labels
+- name: "component: frontend"
+  color: "0052cc"
+  description: "Frontend related"
+
+- name: "component: backend"
+  color: "006b75"
+  description: "Backend related"
+
+- name: "component: database"
+  color: "8b4513"
+  description: "Database related"
+
+- name: "component: ci/cd"
+  color: "2f4f4f"
+  description: "CI/CD pipeline related"
+
+- name: "component: docs"
+  color: "0075ca"
+  description: "Documentation related"
