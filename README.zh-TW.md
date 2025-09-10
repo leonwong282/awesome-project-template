@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🚀 Simple Beautiful Open Project Template
+# 🚀 Awesome Project Template
 
 > 一個現代、美觀且結構良好的開源專案模板
 
@@ -18,30 +18,9 @@
 
 [🌍 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md) 
 
+[特色功能](#-特色功能) • [快速開始](#-快速開始) • [使用方法](#-使用方法) • [貢獻](#-貢獻)
+
 </div>
-
-<!-- 
-📋 徽章選項 - 選擇適合您專案的徽章：
-
-🔧 開發狀態:
-![Status](https://img.shields.io/badge/Status-Stable-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Beta-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Alpha-red?style=for-the-badge)
-
-📊 統計資料:
-![Downloads](https://img.shields.io/github/downloads/leonwong282/awesome-project-template/total?style=for-the-badge&color=blue)
-![Forks](https://img.shields.io/github/forks/leonwong282/awesome-project-template?style=for-the-badge&color=green)
-![Issues](https://img.shields.io/github/issues/leonwong282/awesome-project-template?style=for-the-badge&color=orange)
-![Contributors](https://img.shields.io/github/contributors/leonwong282/awesome-project-template?style=for-the-badge&color=purple)
-
-🌐 語言與國際化:
-![Internationalization](https://img.shields.io/badge/i18n-2_Languages-orange?style=for-the-badge)
-
-💼 維護狀態:
-![Maintained](https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/leonwong282/awesome-project-template?style=for-the-badge&color=blue)
-![Release](https://img.shields.io/github/v/release/leonwong282/awesome-project-template?style=for-the-badge&color=purple)
--->
 
 ## ✨ 特色功能
 
