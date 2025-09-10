@@ -1,5 +1,5 @@
 {
-  "name": "simple-beatiful-open-project-templete",
+  "name": "awesome-project-template",
   "version": "1.0.0",
   "description": "A modern, beautiful, and well-structured open source project template",
   "main": "index.js",
@@ -30,12 +30,12 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonwong282/simple-beatiful-open-project-templete.git"
+    "url": "git+https://github.com/leonwong282/awesome-project-template.git"
   },
   "bugs": {
-    "url": "https://github.com/leonwong282/simple-beatiful-open-project-templete/issues"
+    "url": "https://github.com/leonwong282/awesome-project-template/issues"
   },
-  "homepage": "https://github.com/leonwong282/simple-beatiful-open-project-templete#readme",
+  "homepage": "https://github.com/leonwong282/awesome-project-template#readme",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"

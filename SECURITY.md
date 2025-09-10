@@ -81,18 +81,13 @@ This project implements:
 
 ## Security Resources
 
-- **Security Advisories**: [GitHub Security Advisories](https://github.com/leonwong282/simple-beatiful-open-project-templete/security/advisories)
+- **Security Advisories**: [GitHub Security Advisories](https://github.com/leonwong282/awesome-project-template/security/advisories)
 - **Vulnerability Database**: [GitHub Advisory Database](https://github.com/advisories)
 - **Security Guides**: [GitHub Security Documentation](https://docs.github.com/en/code-security)
 
 ## Contact
 
-For non-security related issues, please use:
-- **General Issues**: [GitHub Issues](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)
-- **Questions**: [GitHub Discussions](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
-
-For security-related concerns:
-- **Email**: [leonwong282@gmail.com](mailto:leonwong282@gmail.com)
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ---
 

@@ -6,13 +6,9 @@ First off, thank you for considering contributing to Project Name! It's people l
 
 - [Code of Conduct](#code-of-conduct)
 - [Getting Started](#getting-started)
-- [How Can I Contribute?](#how-can-i-contribute)
 - [Development Setup](#development-setup)
 - [Pull Request Process](#pull-request-process)
-- [Coding Standards](#coding-standards)
 - [Commit Guidelines](#commit-guidelines)
-- [Testing Guidelines](#testing-guidelines)
-- [Documentation](#documentation)
 
 ## 📜 Code of Conduct
 
@@ -34,7 +30,7 @@ We welcome many different types of contributions including:
 
 ### Before Contributing
 
-1. Check if there's already an [issue](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues) for your contribution
+1. Check if there's already an [issue](https://github.com/leonwong282/awesome-project-template/issues) for your contribution
 2. For major changes, please open an issue first to discuss what you would like to change
 3. Make sure your contribution aligns with the project's goals and roadmap
 
@@ -55,13 +51,13 @@ We welcome many different types of contributions including:
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git
-   cd simple-beatiful-open-project-templete
+   git clone https://github.com/leonwong282/awesome-project-template.git
+   cd awesome-project-template
    ```
 
 3. **Add upstream remote**
    ```bash
-   git remote add upstream https://github.com/leonwong282/simple-beatiful-open-project-templete.git
+   git remote add upstream https://github.com/leonwong282/awesome-project-template.git
    ```
 
 4. **Install dependencies**
@@ -150,61 +146,6 @@ Add screenshots here
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
-```
-
-## 📝 Coding Standards
-
-### General Guidelines
-
-- Write clean, readable, and maintainable code
-- Follow the existing code style and patterns
-- Use meaningful variable and function names
-- Comment complex logic and algorithms
-- Keep functions small and focused
-
-### JavaScript/TypeScript
-
-```javascript
-// Use descriptive variable names
-const userAccountBalance = 1000;
-
-// Use const for immutable values, let for mutable
-const API_URL = 'https://api.example.com';
-let currentUser = null;
-
-// Use arrow functions for short functions
-const calculateTotal = (items) => items.reduce((sum, item) => sum + item.price, 0);
-
-// Use async/await instead of promises when possible
-async function fetchUserData(userId) {
-  try {
-    const response = await fetch(`/api/users/${userId}`);
-    return await response.json();
-  } catch (error) {
-    console.error('Failed to fetch user data:', error);
-    throw error;
-  }
-}
-```
-
-### CSS/Styling
-
-- Use BEM methodology for CSS classes
-- Use CSS custom properties for theming
-- Mobile-first responsive design
-- Prefer CSS Grid and Flexbox for layouts
-
-### File Structure
-
-```
-src/
-├── components/          # Reusable UI components
-├── pages/              # Page components
-├── hooks/              # Custom React hooks
-├── utils/              # Utility functions
-├── types/              # TypeScript type definitions
-├── styles/             # Global styles and themes
-└── __tests__/          # Test files
 ```
 
 ## 📝 Commit Guidelines
@@ -361,7 +302,7 @@ If you need help with contributing:
 
 - 💬 [Join our Discord](https://discord.gg/your-discord)
 - 📧 Email us at: contribute@your-project.com
-- 📝 [Open a discussion](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
+- 📝 [Open a discussion](https://github.com/leonwong282/awesome-project-template/discussions)
 - 🐦 Tweet us [@your-handle](https://twitter.com/your-handle)
 
 ## 📋 Contributor Checklist

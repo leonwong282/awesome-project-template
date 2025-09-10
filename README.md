@@ -10,7 +10,7 @@
 ![License](https://img.shields.io/badge/License-GPL--3.0-red?style=for-the-badge)
 ![Template](https://img.shields.io/badge/Template-Ready-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-purple?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=yellow)
+![Stars](https://img.shields.io/github/stars/leonwong282/awesome-project-template?style=for-the-badge&color=yellow)
 
 [🌍 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md) 
 
@@ -25,18 +25,18 @@
 ![Status](https://img.shields.io/badge/Status-Alpha-red?style=for-the-badge)
 
 📊 Statistics:
-![Downloads](https://img.shields.io/github/downloads/leonwong282/simple-beatiful-open-project-templete/total?style=for-the-badge&color=blue)
-![Forks](https://img.shields.io/github/forks/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=green)
-![Issues](https://img.shields.io/github/issues/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=orange)
-![Contributors](https://img.shields.io/github/contributors/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=purple)
+![Downloads](https://img.shields.io/github/downloads/leonwong282/awesome-project-template/total?style=for-the-badge&color=blue)
+![Forks](https://img.shields.io/github/forks/leonwong282/awesome-project-template?style=for-the-badge&color=green)
+![Issues](https://img.shields.io/github/issues/leonwong282/awesome-project-template?style=for-the-badge&color=orange)
+![Contributors](https://img.shields.io/github/contributors/leonwong282/awesome-project-template?style=for-the-badge&color=purple)
 
 🌐 Language & Internationalization:
 ![Internationalization](https://img.shields.io/badge/i18n-2_Languages-orange?style=for-the-badge)
 
 💼 Maintenance:
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=blue)
-![Release](https://img.shields.io/github/v/release/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=purple)
+![Last Commit](https://img.shields.io/github/last-commit/leonwong282/awesome-project-template?style=for-the-badge&color=blue)
+![Release](https://img.shields.io/github/v/release/leonwong282/awesome-project-template?style=for-the-badge&color=purple)
 -->
 
 ## ✨ Features
@@ -72,13 +72,13 @@ This repository is designed as a GitHub template. You can create a new project f
 **Method 2: GitHub CLI**
 ```bash
 gh repo create your-project-name \
-  --template leonwong282/simple-beatiful-open-project-templete \
+  --template leonwong282/awesome-project-template \
   --public --clone
 ```
 
 **Method 3: Manual Clone**
 ```bash
-git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git your-project
+git clone https://github.com/leonwong282/awesome-project-template.git your-project
 cd your-project
 rm -rf .git && git init
 ```
@@ -141,7 +141,7 @@ npm run start --option value
 
 ```javascript
 // Code example
-import { ProjectFunction } from 'simple-beatiful-open-project-templete';
+import { ProjectFunction } from 'awesome-project-template';
 
 const result = ProjectFunction({
   option1: 'value1',
@@ -209,10 +209,10 @@ npm run build:analyze
 
 ```bash
 # Build Docker image
-docker build -t simple-beatiful-open-project-templete .
+docker build -t awesome-project-template .
 
 # Run with Docker
-docker run -p 3000:3000 simple-beatiful-open-project-templete
+docker run -p 3000:3000 awesome-project-template
 
 # Using Docker Compose
 docker-compose up
@@ -243,7 +243,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - [ ] API v2.0 release
 - [ ] Documentation improvements
 
-See the [open issues](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/leonwong282/awesome-project-template/issues) for a full list of proposed features and known issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,7 +257,7 @@ This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) 
 
 - **Leon Wong** - *Initial work* - [leonwong282](https://github.com/leonwong282)
 
-See also the list of [contributors](https://github.com/leonwong282/simple-beatiful-open-project-templete/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/leonwong282/awesome-project-template/contributors) who participated in this project.
 
 ## 🙏 Acknowledgments
 
@@ -294,7 +294,7 @@ This template was inspired by and built upon the work of many excellent open sou
 
 ---
 
-*If you're using this template and want to add your project to our showcase, feel free to [open an issue](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)!*
+*If you're using this template and want to add your project to our showcase, feel free to [open an issue](https://github.com/leonwong282/awesome-project-template/issues)!*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -302,8 +302,8 @@ This template was inspired by and built upon the work of many excellent open sou
 
 If you have any questions or need help, please:
 
-- 📝 [Open an issue](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues/new)
-- 💬 [Start a discussion](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
+- 📝 [Open an issue](https://github.com/leonwong282/awesome-project-template/issues/new)
+- 💬 [Start a discussion](https://github.com/leonwong282/awesome-project-template/discussions)
 - 📧 Email us at: leonwong282@gmail.com
 - 🌐 Visit my blog: [leonwong282.com](https://leonwong282.com/)
 

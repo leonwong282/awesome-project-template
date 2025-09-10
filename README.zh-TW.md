@@ -8,9 +8,13 @@
 
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-GPL--3.0-red?style=for-the-badge)
-![Template](https://img.shields.io/badge/Template-Ready-green?style=for-the-badge)
+![Template](https://img.s如果您有任何問題或需要幫助，請：
+
+- 📝 [開啟議題](https://github.com/leonwong282/awesome-project-template/issues/new)
+- 💬 [開始討論](https://github.com/leonwong282/awesome-project-template/discussions)
+- 📧 發送郵件至：leonwong282@gmail.coms.io/badge/Template-Ready-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-purple?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=yellow)
+![Stars](https://img.shields.io/github/stars/leonwong282/awesome-project-template?style=for-the-badge&color=yellow)
 
 [🌍 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md) 
 
@@ -25,18 +29,18 @@
 ![Status](https://img.shields.io/badge/Status-Alpha-red?style=for-the-badge)
 
 📊 統計資料:
-![Downloads](https://img.shields.io/github/downloads/leonwong282/simple-beatiful-open-project-templete/total?style=for-the-badge&color=blue)
-![Forks](https://img.shields.io/github/forks/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=green)
-![Issues](https://img.shields.io/github/issues/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=orange)
-![Contributors](https://img.shields.io/github/contributors/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=purple)
+![Downloads](https://img.shields.io/github/downloads/leonwong282/awesome-project-template/total?style=for-the-badge&color=blue)
+![Forks](https://img.shields.io/github/forks/leonwong282/awesome-project-template?style=for-the-badge&color=green)
+![Issues](https://img.shields.io/github/issues/leonwong282/awesome-project-template?style=for-the-badge&color=orange)
+![Contributors](https://img.shields.io/github/contributors/leonwong282/awesome-project-template?style=for-the-badge&color=purple)
 
 🌐 語言與國際化:
 ![Internationalization](https://img.shields.io/badge/i18n-2_Languages-orange?style=for-the-badge)
 
 💼 維護狀態:
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=blue)
-![Release](https://img.shields.io/github/v/release/leonwong282/simple-beatiful-open-project-templete?style=for-the-badge&color=purple)
+![Last Commit](https://img.shields.io/github/last-commit/leonwong282/awesome-project-template?style=for-the-badge&color=blue)
+![Release](https://img.shields.io/github/v/release/leonwong282/awesome-project-template?style=for-the-badge&color=purple)
 -->
 
 ## ✨ 特色功能
@@ -72,13 +76,13 @@
 **方法二：GitHub CLI**
 ```bash
 gh repo create your-project-name \
-  --template leonwong282/simple-beatiful-open-project-templete \
+  --template leonwong282/awesome-project-template \
   --public --clone
 ```
 
 **方法三：手動複製**
 ```bash
-git clone https://github.com/leonwong282/simple-beatiful-open-project-templete.git your-project
+git clone https://github.com/leonwong282/awesome-project-template.git your-project
 cd your-project
 rm -rf .git && git init
 ```
@@ -141,7 +145,7 @@ npm run start --option value
 
 ```javascript
 // 程式碼範例
-import { ProjectFunction } from 'simple-beatiful-open-project-templete';
+import { ProjectFunction } from 'awesome-project-template';
 
 const result = ProjectFunction({
   option1: 'value1',
@@ -209,10 +213,10 @@ npm run build:analyze
 
 ```bash
 # 建置 Docker 映像
-docker build -t simple-beatiful-open-project-templete .
+docker build -t awesome-project-template .
 
 # 使用 Docker 執行
-docker run -p 3000:3000 simple-beatiful-open-project-templete
+docker run -p 3000:3000 awesome-project-template
 
 # 使用 Docker Compose
 docker-compose up
@@ -243,7 +247,7 @@ docker-compose up
 - [ ] API v2.0 發布
 - [ ] 文件改進
 
-查看[開放議題](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)以獲取完整的建議功能和已知問題清單。
+查看[開放議題](https://github.com/leonwong282/awesome-project-template/issues)以獲取完整的建議功能和已知問題清單。
 
 <p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
@@ -257,7 +261,7 @@ docker-compose up
 
 - **Leon Wong** - *初始開發* - [leonwong282](https://github.com/leonwong282)
 
-另請參閱參與此專案的[貢獻者](https://github.com/leonwong282/simple-beatiful-open-project-templete/contributors)清單。
+另請參閱參與此專案的[貢獻者](https://github.com/leonwong282/awesome-project-template/contributors)清單。
 
 ## 🙏 致謝
 
@@ -294,7 +298,7 @@ docker-compose up
 
 ---
 
-*如果您正在使用此模板並希望將您的專案加入我們的展示，歡迎[開啟議題](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues)！*
+*如果您正在使用此模板並希望將您的專案加入我們的展示，歡迎[開啟議題](https://github.com/leonwong282/awesome-project-template/issues)！*
 
 <p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
@@ -302,8 +306,8 @@ docker-compose up
 
 如果您有任何問題或需要協助，請：
 
-- 📝 [開啟議題](https://github.com/leonwong282/simple-beatiful-open-project-templete/issues/new)
-- 💬 [開始討論](https://github.com/leonwong282/simple-beatiful-open-project-templete/discussions)
+- 📝 [開啟議題](https://github.com/leonwong282/awesome-project-template/issues/new)
+- 💬 [開始討論](https://github.com/leonwong282/awesome-project-template/discussions)
 - 📧 發送電子郵件至：leonwong282@gmail.com
 - 🌐 造訪我的部落格：[leonwong282.com](https://leonwong282.com/)
 
