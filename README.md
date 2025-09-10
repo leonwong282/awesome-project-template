@@ -83,8 +83,6 @@ cd your-project
 rm -rf .git && git init
 ```
 
-📖 **For detailed instructions, see [TEMPLATE_USAGE.md](TEMPLATE_USAGE.md)**
-
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:

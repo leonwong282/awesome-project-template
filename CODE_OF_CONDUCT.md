@@ -58,10 +58,6 @@ This Code of Conduct applies to all project spaces, including:
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1.
 
-## Questions?
-
-If you have questions about this Code of Conduct, please reach out to the project maintainers at [leonwong282@gmail.com](mailto:leonwong282@gmail.com).
-
 ---
 
 <div align="center">

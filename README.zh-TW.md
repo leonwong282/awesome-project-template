@@ -87,8 +87,6 @@ cd your-project
 rm -rf .git && git init
 ```
 
-📖 **詳細說明請參閱 [TEMPLATE_USAGE.md](TEMPLATE_USAGE.md)**
-
 ### 系統需求
 
 開始之前，請確保您已安裝以下軟體：
