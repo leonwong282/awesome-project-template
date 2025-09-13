@@ -8,11 +8,7 @@
 
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-GPL--3.0-red?style=for-the-badge)
-![Template](https://img.s如果您有任何問題或需要幫助，請：
-
-- 📝 [開啟議題](https://github.com/leonwong282/awesome-project-template/issues/new)
-- 💬 [開始討論](https://github.com/leonwong282/awesome-project-template/discussions)
-- 📧 發送郵件至：leonwong282@gmail.coms.io/badge/Template-Ready-green?style=for-the-badge)
+![Template](https://img.shields.io/badge/Template-Ready-green?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-purple?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/leonwong282/awesome-project-template?style=for-the-badge&color=yellow)
 
