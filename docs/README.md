@@ -5,6 +5,7 @@ Welcome to the Project Name documentation! Here you'll find comprehensive guides
 ## 🚀 Getting Started
 
 - **[Getting Started Guide](GETTING_STARTED.md)** - Quick setup and installation
+- **[Database Setup](DATABASE_SETUP.md)** - Database configuration and schema setup
 - **[Project Structure](PROJECT_STRUCTURE.md)** - Understanding the codebase organization
 - **[Configuration](CONFIGURATION.md)** - Environment setup and customization
 

@@ -23,20 +23,23 @@
 
 ## ✨ Features
 
-- 🎯 **Feature 1**: Brief description of the main feature
-- 🚀 **Feature 2**: Another key feature that makes your project stand out
-- 🛡️ **Feature 3**: Security or reliability focused feature
-- 🎨 **Feature 4**: UI/UX or design related feature
-- 📱 **Feature 5**: Cross-platform or responsive feature
-- ⚡ **Feature 6**: Performance or speed optimization
+- 🎯 **Modern Tech Stack**: React 18 + TypeScript + Vite for blazing-fast development
+- 🗄️ **Database Templates**: Ready-to-use SQL schemas for PostgreSQL, MySQL, and SQLite
+- � **Documentation-First**: Comprehensive guides for users and contributors
+- 🤝 **GitHub Integration**: Issue templates, PR templates, and community health files
+- � **Code Quality**: ESLint, Prettier, and EditorConfig for consistent code style
+- � **Multi-Language**: Template structure supports internationalization
+- � **Migration System**: Database migration templates with best practices
+- 🌱 **Seed Data**: Development and test data for quick project setup
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, TypeScript, Tailwind CSS
-- **Backend**: Node.js, Express, PostgreSQL
-- **Testing**: Jest, Cypress, Testing Library
-- **DevOps**: Docker, GitHub Actions, AWS
-- **Tools**: ESLint, Prettier, Husky
+- **Frontend**: React 18, TypeScript, Vite
+- **Database**: PostgreSQL, MySQL, SQLite (templates included)
+- **Code Quality**: ESLint, Prettier, EditorConfig
+- **Documentation**: Comprehensive markdown guides
+- **Community**: GitHub templates, Code of Conduct, Contributing guidelines
+- **License**: GPL-3.0 (open source friendly)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,6 +74,7 @@ Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v18.0.0 or higher)
 - [Git](https://git-scm.com/)
+- [Database System](docs/DATABASE_SETUP.md) (PostgreSQL, MySQL, or SQLite)
 - [GitHub CLI](https://cli.github.com/) (optional, for Method 2)
 
 ### Development Setup (After Using Template)
@@ -86,13 +90,21 @@ Once you've created your project from this template:
    pnpm install
    ```
 
-2. **Set up environment variables**
+2. **Set up database** (see [Database Setup Guide](docs/DATABASE_SETUP.md))
+   ```bash
+   # Choose your database system and run schema files
+   npm run db:setup    # Get setup guidance
+   npm run db:seed:dev # Load development data
+   ```
+
+3. **Set up environment variables**
    ```bash
    cp .env.example .env.local
    # Edit .env.local with your configuration
+   # Don't forget to add DATABASE_URL and other database settings
    ```
 
-3. **Start the development server**
+4. **Start the development server**
    ```bash
    npm run dev
    # or
@@ -105,98 +117,106 @@ Once you've created your project from this template:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📖 Usage
+## 🏗️ Template Structure
 
-### Basic Usage
+This template provides a comprehensive foundation with the following components:
 
-```bash
-# Example command
-npm run start
-
-# With options
-npm run start --option value
+### 📁 Project Organization
+```
+awesome-project-template/
+├── 📚 docs/                    # Comprehensive documentation
+│   ├── GETTING_STARTED.md      # Quick start guide
+│   ├── DATABASE_SETUP.md       # Database configuration
+│   └── README.md               # Documentation index
+├── 🗄️ database/               # SQL templates and migrations
+│   ├── schema/                 # Database schema files
+│   ├── migrations/             # Migration templates
+│   ├── seeds/                  # Sample data
+│   └── scripts/                # Setup and utility scripts
+├── 🤝 .github/                # GitHub integration
+│   ├── ISSUE_TEMPLATE/         # Issue templates
+│   ├── copilot-instructions.md # AI agent guidance
+│   └── pull_request_template.md # PR template
+├── 📋 Community Files
+│   ├── CONTRIBUTING.md         # Contribution guidelines
+│   ├── CODE_OF_CONDUCT.md      # Community standards
+│   └── SECURITY.md             # Security policy
+└── ⚙️ Configuration
+    ├── package.json            # Dependencies and scripts
+    ├── .editorconfig           # Code style consistency
+    └── .gitignore              # Git ignore patterns
 ```
 
-### Advanced Usage
+### 🎯 Key Components
 
-```javascript
-// Code example
-import { ProjectFunction } from 'awesome-project-template';
-
-const result = ProjectFunction({
-  option1: 'value1',
-  option2: 'value2'
-});
-
-console.log(result);
-```
-
-### Configuration
-
-Create a `config.json` file in your project root:
-
-```json
-{
-  "option1": "value1",
-  "option2": "value2",
-  "advanced": {
-    "feature": true,
-    "timeout": 5000
-  }
-}
-```
+- **Multi-language README** - English and Traditional Chinese versions
+- **Database Templates** - Production-ready SQL schemas for major databases
+- **GitHub Integration** - Issue templates, PR templates, community health files
+- **Documentation Hub** - Comprehensive guides in `/docs/`
+- **Migration System** - Database version control with rollback support
+- **Seed Data** - Sample data for development and testing environments
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📊 Examples
+## 📖 Usage
 
-### Example 1: Basic Implementation
+### Customizing Your Project
 
-```javascript
-// Your example code here
-```
+After creating your project from this template:
 
-### Example 2: Advanced Features
-
-```javascript
-// More complex example
-```
-
-## 🧪 Testing
-
+#### 1. **Update Project Information**
 ```bash
-# Run tests
-npm test
-
-# Run tests with coverage
-npm run test:coverage
-
-# Run end-to-end tests
-npm run test:e2e
+# Replace placeholder information in:
+# - package.json (name, description, author, repository)
+# - README.md (project name, description, URLs)
+# - docs/ files (update project-specific information)
 ```
 
-## 📦 Build
-
+#### 2. **Database Setup**
 ```bash
+# Choose and configure your database
+npm run db:setup      # Get setup guidance
+npm run db:seed:dev   # Load development data
+npm run db:seed:test  # Load test data
+```
+
+#### 3. **Development Workflow**
+```bash
+# Development server
+npm run dev
+
+# Code quality
+npm run lint          # Check code style
+npm run lint:fix      # Auto-fix issues
+npm run format        # Format code with Prettier
+
 # Build for production
 npm run build
-
-# Build and analyze bundle
-npm run build:analyze
+npm run preview       # Preview production build
 ```
 
-## 🐳 Docker
+### Available Scripts
 
-```bash
-# Build Docker image
-docker build -t awesome-project-template .
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start Vite development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Fix ESLint errors |
+| `npm run format` | Format code with Prettier |
+| `npm run db:setup` | Database setup guidance |
+| `npm run db:seed:dev` | Load development seed data |
+| `npm run db:seed:test` | Load test seed data |
 
-# Run with Docker
-docker run -p 3000:3000 awesome-project-template
+### Documentation
 
-# Using Docker Compose
-docker-compose up
-```
+For detailed guides and documentation:
+
+- **[📚 Documentation Hub](docs/README.md)** - Complete documentation index
+- **[🚀 Getting Started](docs/GETTING_STARTED.md)** - Detailed setup instructions
+- **[🗄️ Database Setup](docs/DATABASE_SETUP.md)** - Database configuration guide
+- **[🤝 Contributing](CONTRIBUTING.md)** - How to contribute to your project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -216,12 +236,17 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## 📋 Roadmap
 
-- [ ] Feature 1 implementation
-- [ ] Feature 2 development
-- [ ] Performance optimizations
-- [ ] Mobile app version
-- [ ] API v2.0 release
-- [ ] Documentation improvements
+## 📋 Roadmap
+
+- [x] **Core Template Structure** - Modern project foundation
+- [x] **Database Templates** - SQL schemas for major databases  
+- [x] **GitHub Integration** - Issue/PR templates, community files
+- [x] **Documentation System** - Comprehensive guides and setup instructions
+- [ ] **CI/CD Templates** - GitHub Actions workflows for common tasks
+- [ ] **Docker Configuration** - Containerization templates
+- [ ] **Testing Framework** - Unit and integration test examples
+- [ ] **API Documentation** - OpenAPI/Swagger templates
+- [ ] **Monitoring Setup** - Logging and monitoring configurations
 
 See the [open issues](https://github.com/leonwong282/awesome-project-template/issues) for a full list of proposed features and known issues.
 

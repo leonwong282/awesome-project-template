@@ -20,20 +20,23 @@
 
 ## ✨ 特色功能
 
-- 🎯 **功能一**: 主要功能的簡要描述
-- 🚀 **功能二**: 另一個讓您的專案脫穎而出的關鍵功能
-- 🛡️ **功能三**: 專注於安全性或可靠性的功能
-- 🎨 **功能四**: UI/UX 或設計相關功能
-- 📱 **功能五**: 跨平台或響應式功能
-- ⚡ **功能六**: 性能或速度優化
+- 🎯 **現代技術堆疊**: React 18 + TypeScript + Vite 提供極速開發體驗
+- �️ **資料庫模板**: 為 PostgreSQL、MySQL 和 SQLite 提供即用的 SQL 架構
+- � **文件優先**: 為用戶和貢獻者提供全面的指南
+- 🤝 **GitHub 整合**: 議題模板、PR 模板和社群健康檔案
+- � **程式品質**: ESLint、Prettier 和 EditorConfig 確保程式碼風格一致
+- 🌍 **多語言支援**: 模板結構支援國際化
+- 🔄 **遷移系統**: 資料庫遷移模板與最佳實踐
+- 🌱 **種子資料**: 開發和測試資料，快速建立專案
 
 ## 🛠️ 技術堆疊
 
-- **前端**: React, TypeScript, Tailwind CSS
-- **後端**: Node.js, Express, PostgreSQL
-- **測試**: Jest, Cypress, Testing Library
-- **DevOps**: Docker, GitHub Actions, AWS
-- **工具**: ESLint, Prettier, Husky
+- **前端**: React 18, TypeScript, Vite
+- **資料庫**: PostgreSQL, MySQL, SQLite (包含模板)
+- **程式品質**: ESLint, Prettier, EditorConfig
+- **文件**: 全面的 markdown 指南
+- **社群**: GitHub 模板、行為準則、貢獻指南
+- **授權**: GPL-3.0 (開源友好)
 
 <p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
@@ -68,6 +71,7 @@ rm -rf .git && git init
 
 - [Node.js](https://nodejs.org/) (v18.0.0 或更高版本)
 - [Git](https://git-scm.com/)
+- [資料庫系統](docs/DATABASE_SETUP.md) (PostgreSQL, MySQL, 或 SQLite)
 - [GitHub CLI](https://cli.github.com/)（可選，用於方法二）
 
 ### 開發環境設定（使用模板後）
@@ -83,13 +87,21 @@ rm -rf .git && git init
    pnpm install
    ```
 
-2. **設定環境變數**
+2. **設定資料庫**（詳見 [資料庫設定指南](docs/DATABASE_SETUP.md)）
+   ```bash
+   # 選擇您的資料庫系統並執行架構檔案
+   npm run db:setup    # 取得設定指引
+   npm run db:seed:dev # 載入開發資料
+   ```
+
+3. **設定環境變數**
    ```bash
    cp .env.example .env.local
    # 使用您的配置編輯 .env.local
+   # 別忘了新增 DATABASE_URL 和其他資料庫設定
    ```
 
-3. **啟動開發伺服器**
+4. **啟動開發伺服器**
    ```bash
    npm run dev
    # 或
@@ -102,30 +114,113 @@ rm -rf .git && git init
 
 <p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
-## 📖 使用方法
+## 🏗️ 模板結構
 
-### 基本使用
+此模板提供全面的基礎，包含以下組件：
 
-```bash
-# 範例指令
-npm run start
-
-# 帶選項
-npm run start --option value
+### 📁 專案組織
+```
+awesome-project-template/
+├── 📚 docs/                    # 全面的文件
+│   ├── GETTING_STARTED.md      # 快速開始指南
+│   ├── DATABASE_SETUP.md       # 資料庫配置
+│   └── README.md               # 文件索引
+├── 🗄️ database/               # SQL 模板和遷移
+│   ├── schema/                 # 資料庫架構檔案
+│   ├── migrations/             # 遷移模板
+│   ├── seeds/                  # 範例資料
+│   └── scripts/                # 設定和工具腳本
+├── 🤝 .github/                # GitHub 整合
+│   ├── ISSUE_TEMPLATE/         # 議題模板
+│   ├── copilot-instructions.md # AI 代理指南
+│   └── pull_request_template.md # PR 模板
+├── � 社群檔案
+│   ├── CONTRIBUTING.md         # 貢獻指南
+│   ├── CODE_OF_CONDUCT.md      # 社群標準
+│   └── SECURITY.md             # 安全政策
+└── ⚙️ 配置
+    ├── package.json            # 相依性和腳本
+    ├── .editorconfig           # 程式碼風格一致性
+    └── .gitignore              # Git 忽略模式
 ```
 
-### 進階使用
+### 🎯 核心組件
+
+- **多語言 README** - 英文和繁體中文版本
+- **資料庫模板** - 主要資料庫的生產就緒 SQL 架構
+- **GitHub 整合** - 議題模板、PR 模板、社群健康檔案
+- **文件中心** - `/docs/` 中的全面指南
+- **遷移系統** - 資料庫版本控制與回滾支援
+- **種子資料** - 開發和測試環境的範例資料
+
+<p align="right">(<a href="#readme-top">回到頂部</a>)</p>
+
+## �📖 使用方法
+
+### 自定義您的專案
+
+使用此模板建立專案後：
+
+#### 1. **更新專案資訊**
+```bash
+# 在以下檔案中替換佔位符資訊：
+# - package.json (名稱、描述、作者、儲存庫)
+# - README.md (專案名稱、描述、URL)
+# - docs/ 檔案 (更新專案特定資訊)
+```
+
+#### 2. **資料庫設定**
+```bash
+# 選擇並配置您的資料庫
+npm run db:setup      # 取得設定指引
+npm run db:seed:dev   # 載入開發資料
+npm run db:seed:test  # 載入測試資料
+```
+
+#### 3. **開發工作流程**
+```bash
+# 開發伺服器
+npm run dev
+
+# 程式品質
+npm run lint          # 檢查程式碼風格
+npm run lint:fix      # 自動修正問題
+npm run format        # 使用 Prettier 格式化程式碼
+
+# 建置生產版本
+npm run build
+npm run preview       # 預覽生產建置
+```
+
+### 可用腳本
+
+| 腳本 | 描述 |
+|------|------|
+| `npm run dev` | 啟動 Vite 開發伺服器 |
+| `npm run build` | 建置生產版本 |
+| `npm run preview` | 預覽生產建置 |
+| `npm run lint` | 執行 ESLint |
+| `npm run lint:fix` | 修正 ESLint 錯誤 |
+| `npm run format` | 使用 Prettier 格式化程式碼 |
+| `npm run db:setup` | 資料庫設定指引 |
+| `npm run db:seed:dev` | 載入開發種子資料 |
+| `npm run db:seed:test` | 載入測試種子資料 |
+
+### 文件
+
+詳細指南和文件：
+
+- **[📚 文件中心](docs/README.md)** - 完整文件索引
+- **[🚀 開始使用](docs/GETTING_STARTED.md)** - 詳細設定說明
+- **[🗄️ 資料庫設定](docs/DATABASE_SETUP.md)** - 資料庫配置指南
+- **[🤝 貢獻](CONTRIBUTING.md)** - 如何為您的專案做出貢獻
+
+<p align="right">(<a href="#readme-top">回到頂部</a>)</p>
 
 ```javascript
-// 程式碼範例
-import { ProjectFunction } from 'awesome-project-template';
+## 🤝 貢獻
 
-const result = ProjectFunction({
-  option1: 'value1',
-  option2: 'value2'
-});
-
-console.log(result);
+歡迎貢獻！請查看我們的 [貢獻指南](CONTRIBUTING.md) 了解詳情。
 ```
 
 ### 配置
@@ -213,12 +308,15 @@ docker-compose up
 
 ## 📋 路線圖
 
-- [ ] 功能一實作
-- [ ] 功能二開發
-- [ ] 性能優化
-- [ ] 手機應用程式版本
-- [ ] API v2.0 發布
-- [ ] 文件改進
+- [x] **核心模板結構** - 現代專案基礎
+- [x] **資料庫模板** - 主要資料庫的 SQL 架構
+- [x] **GitHub 整合** - 議題/PR 模板、社群檔案
+- [x] **文件系統** - 全面的指南和設定說明
+- [ ] **CI/CD 模板** - 常見任務的 GitHub Actions 工作流程
+- [ ] **Docker 配置** - 容器化模板
+- [ ] **測試框架** - 單元和整合測試範例
+- [ ] **API 文件** - OpenAPI/Swagger 模板
+- [ ] **監控設定** - 日誌記錄和監控配置
 
 查看[開放議題](https://github.com/leonwong282/awesome-project-template/issues)以獲取完整的建議功能和已知問題清單。
 
