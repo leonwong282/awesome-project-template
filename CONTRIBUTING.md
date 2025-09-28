@@ -33,7 +33,6 @@ This project and everyone participating in it is governed by our [Code of Conduc
 
 ### PR Template
 
-```markdown
 ## Description
 Brief description of changes
 
@@ -60,7 +59,6 @@ Add screenshots here
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
-```
 
 ## 📝 Commit Guidelines
 
