@@ -146,8 +146,7 @@ For each contribution:
 
 <div align="center">
 
-Thank you for contributing to Project Name! 🎉
-
-Your contributions make this project better for everyone in the community.
+**Thank you for contributing to Project Name! 🎉**
+**Your contributions make this project better for everyone in the community.**
 
 </div>

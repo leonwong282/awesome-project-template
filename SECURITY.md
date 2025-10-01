@@ -81,7 +81,6 @@ This project implements:
 
 ## Security Resources
 
-- **Security Advisories**: [GitHub Security Advisories](https://github.com/leonwong282/awesome-project-template/security/advisories)
 - **Vulnerability Database**: [GitHub Advisory Database](https://github.com/advisories)
 - **Security Guides**: [GitHub Security Documentation](https://docs.github.com/en/code-security)
 
