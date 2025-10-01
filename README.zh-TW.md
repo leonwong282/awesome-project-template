@@ -2,6 +2,10 @@
 
 <div align="center">
 
+<a href="https://github.com/leonwong282/awesome-project-template">
+  <img src="images/logo.png" alt="Logo" width="80" height="80">
+</a>
+
 # 🚀 Awesome Project Template
 
 > 一個現代、美觀且結構良好的開源專案模板
