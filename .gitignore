@@ -1,3 +1,8 @@
+# More options:
+# Option 1: gitignore.io (https://www.toptal.com/developers/gitignore)
+# Option 2: GitHub's collection of useful .gitignore templates (https://github.com/github/gitignore)
+# Option 3: Visual Studio Code's default .gitignore (https://github.com/microsoft/vscode/blob/main/.gitignore)
+
 # Node.js
 node_modules/
 npm-debug.log*
