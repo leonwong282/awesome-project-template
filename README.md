@@ -24,7 +24,6 @@
 
 ## 📸 Preview
 
-
 ## ✨ Features
 
 - 🎯 **Modern Tech Stack**: React 18 + TypeScript + Vite for blazing-fast development
