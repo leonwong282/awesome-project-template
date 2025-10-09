@@ -6,7 +6,7 @@
   <img src="images/logo.png" alt="Logo" width="80" height="80">
 </a>
 
-# 🚀 Wesome Project Template
+# 🚀 Awesome Project Template
 
 > A modern, beautiful, and well-structured open source project template
 
