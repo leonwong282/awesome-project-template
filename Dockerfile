@@ -3,6 +3,13 @@
 # Learn more: https://docs.docker.com/build/building/multi-stage/
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# PLACEHOLDER - This Dockerfile is a template. Uncomment ONE section below.
+# The following line prevents "no source image" errors from linters.
+# ═══════════════════════════════════════════════════════════════════════════════
+FROM scratch AS placeholder
+# Remove the above line and uncomment one of the sections below for your project.
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # CHOOSE YOUR LANGUAGE: Uncomment ONE of the sections below
 # ═══════════════════════════════════════════════════════════════════════════════
 

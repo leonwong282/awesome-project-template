@@ -60,6 +60,19 @@ cat .editorconfig
 
 Add your source code and start developing.
 
+## Workflow Overview
+
+```mermaid
+flowchart LR
+    A[Use Template] --> B[Clone Repository]
+    B --> C[Customize Files]
+    C --> D[Set Up Tools]
+    D --> E[Start Building!]
+    E --> F{Ready to Share?}
+    F -->|Yes| G[Push & Collaborate]
+    F -->|No| E
+```
+
 ## Template Structure
 
 ```

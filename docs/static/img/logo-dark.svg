@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle with lighter gradient for dark mode visibility -->
+  <circle cx="100" cy="100" r="90" fill="url(#darkGrad)"/>
+  <!-- Star symbol - white for contrast on dark backgrounds -->
+  <polygon
+    points="100,30 116,70 160,70 125,95 140,140 100,115 60,140 75,95 40,70 84,70"
+    fill="#ffffff"
+  />
+</svg>

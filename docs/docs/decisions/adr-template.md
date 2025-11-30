@@ -10,7 +10,7 @@ Naming convention: adr-XXXX-short-descriptive-title.md
 | Date | YYYY-MM-DD |
 | Author | @your-github-username |
 | Deciders | @username1, @username2 |
-| Supersedes | [ADR-XXXX](./adr-xxxx.md) *(if applicable)* |
+| Supersedes | ADR-XXXX *(if applicable, link to the ADR)* |
 
 ## Context
 
@@ -85,8 +85,8 @@ Chosen option: **"Option X"**, because [justification].
 
 <!-- Optional: Related documents, issues, or external resources -->
 
-- [Related Issue](#123)
-- [Related ADR](./adr-xxxx.md)
+- Related Issue: #123
+- Related ADR: ADR-XXXX (link to related ADR)
 - [External Reference](https://example.com)
 
 ## Notes

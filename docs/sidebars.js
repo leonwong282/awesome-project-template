@@ -17,6 +17,17 @@ const sidebars = {
         'guides/PRECOMMIT_GUIDE',
         'guides/LICENSE_GUIDE',
         'guides/GITHUB_SETTINGS_GUIDE',
+        {
+          type: 'category',
+          label: '⚙️ Advanced',
+          collapsed: true,
+          items: [
+            'guides/SEARCH_GUIDE',
+            'guides/VERSIONING_GUIDE',
+            'guides/ANALYTICS_GUIDE',
+            'guides/ACCESSIBILITY_GUIDE',
+          ],
+        },
       ],
     },
     {

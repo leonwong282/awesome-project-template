@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "目前版本",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.📚 Guides": {
+    "message": "📚 指南",
+    "description": "The label for category '📚 Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.📖 Reference": {
+    "message": "📖 參考資料",
+    "description": "The label for category '📖 Reference' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.👥 Community": {
+    "message": "👥 社群",
+    "description": "The label for category '👥 Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.🏛️ Decisions": {
+    "message": "🏛️ 架構決策",
+    "description": "The label for category '🏛️ Decisions' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.doc.🚀 Getting Started": {
+    "message": "🚀 快速開始",
+    "description": "The label for the doc item '🚀 Getting Started' in sidebar 'docsSidebar', linking to the doc intro"
+  }
+}

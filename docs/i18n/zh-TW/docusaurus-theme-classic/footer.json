@@ -1,0 +1,62 @@
+{
+  "link.title.Documentation": {
+    "message": "文件",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Reference": {
+    "message": "參考資料",
+    "description": "The title of the footer links column with title=Reference in the footer"
+  },
+  "link.title.Community": {
+    "message": "社群",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "快速開始",
+    "description": "The label of footer link with label=Getting Started linking to /docs/guides/GETTING_STARTED"
+  },
+  "link.item.label.EditorConfig Guide": {
+    "message": "EditorConfig 指南",
+    "description": "The label of footer link with label=EditorConfig Guide linking to /docs/guides/EDITORCONFIG_GUIDE"
+  },
+  "link.item.label.Pre-commit Guide": {
+    "message": "Pre-commit 指南",
+    "description": "The label of footer link with label=Pre-commit Guide linking to /docs/guides/PRECOMMIT_GUIDE"
+  },
+  "link.item.label.License Guide": {
+    "message": "授權條款指南",
+    "description": "The label of footer link with label=License Guide linking to /docs/guides/LICENSE_GUIDE"
+  },
+  "link.item.label.Contributing": {
+    "message": "貢獻指南",
+    "description": "The label of footer link with label=Contributing linking to /docs/reference/contributing"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/leonwong282/awesome-project-template"
+  },
+  "link.item.label.Issues": {
+    "message": "問題回報",
+    "description": "The label of footer link with label=Issues linking to https://github.com/leonwong282/awesome-project-template/issues"
+  },
+  "link.item.label.Discussions": {
+    "message": "討論區",
+    "description": "The label of footer link with label=Discussions linking to https://github.com/leonwong282/awesome-project-template/discussions"
+  },
+  "link.item.label.Code of Conduct": {
+    "message": "行為準則",
+    "description": "The label of footer link with label=Code of Conduct linking to /docs/community/code-of-conduct"
+  },
+  "link.item.label.Security Policy": {
+    "message": "安全政策",
+    "description": "The label of footer link with label=Security Policy linking to /docs/community/security"
+  },
+  "copyright": {
+    "message": "版權所有 © 2025 Leon Wong。使用 Docusaurus 建置。採用 GPL-3.0 授權。",
+    "description": "The footer copyright"
+  }
+}
