@@ -60,3 +60,4 @@ temp/
 
 # Docusaurus local build/cache
 .docusaurus/
+docs/build/

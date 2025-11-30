@@ -1,0 +1,83 @@
+# 🔧 Pre-commit Configuration
+# See: https://pre-commit.com for more information
+# Run `pre-commit install` to set up the git hook scripts
+# Run `pre-commit run --all-files` to check all files
+
+# Minimum pre-commit version
+minimum_pre_commit_version: '3.0.0'
+
+# Fail fast - stop on first failure (set to true for faster feedback)
+fail_fast: false
+
+# Global file excludes
+exclude: |
+  (?x)^(
+    docs/build/.*|
+    node_modules/.*|
+    \.git/.*|
+    .*\.min\.(js|css)$
+  )$
+
+repos:
+  # ===================
+  # General file checks
+  # ===================
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # Whitespace & formatting (aligned with .editorconfig)
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]  # Preserve MD line breaks
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]  # Enforce LF per .editorconfig
+
+      # Syntax validation
+      - id: check-yaml
+        args: [--unsafe]  # Allow custom YAML tags
+      - id: check-json
+      - id: check-toml
+
+      # Git hygiene
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-case-conflict
+
+      # Security
+      - id: detect-private-key
+
+  # ===================
+  # EditorConfig enforcement
+  # ===================
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: 3.0.3
+    hooks:
+      - id: editorconfig-checker
+        alias: ec
+
+  # ===================
+  # Markdown linting
+  # ===================
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.43.0
+    hooks:
+      - id: markdownlint
+        args: [--config, .markdownlint.json]
+
+  # ===================
+  # YAML linting
+  # ===================
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [-c, .yamllint.yml]
+
+  # ===================
+  # Pre-commit meta hooks
+  # ===================
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+      - id: check-useless-excludes

@@ -2,11 +2,48 @@
 
 This directory contains the documentation website built with [Docusaurus](https://docusaurus.io/).
 
+## 📁 Documentation Structure
+
+This template uses a **two-tier documentation approach**:
+
+| Location | Purpose | When to Use |
+|----------|---------|-------------|
+| **Root level** (`/`) | GitHub community files | Standard files GitHub recognizes: `README.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` |
+| **This directory** (`/docs/`) | Docusaurus site | Detailed guides, tutorials, API docs, and any documentation that benefits from a structured website |
+
+### Why This Structure?
+
+1. **GitHub Integration**: Files like `CONTRIBUTING.md` and `SECURITY.md` at the root are automatically recognized by GitHub and shown in the repository UI
+2. **Rich Documentation**: Docusaurus provides search, versioning, i18n, and beautiful presentation for detailed docs
+3. **No Duplication**: Root files are for GitHub, Docusaurus is for in-depth content
+
+### Where to Add Your Documentation
+
+```
+/                           ← GitHub community files (keep these here)
+├── README.md               ← Project overview (GitHub landing page)
+├── CONTRIBUTING.md         ← Contribution guidelines
+├── CODE_OF_CONDUCT.md      ← Community standards
+├── SECURITY.md             ← Security policy
+└── CHANGELOG.md            ← Version history
+
+/docs/                      ← Docusaurus site root
+├── docs/                   ← 📝 Your documentation content goes here
+│   ├── intro.md           ← Getting started guide
+│   ├── guides/            ← How-to guides and tutorials
+│   ├── reference/         ← API reference, configuration docs
+│   └── community/         ← Community guidelines (mirrors root)
+├── static/                 ← Images, downloads, static assets
+├── src/                    ← Custom React components, CSS
+├── docusaurus.config.js    ← Site configuration
+└── sidebars.js             ← Navigation structure
+```
+
 ## Quick Start
 
 ```bash
-# Navigate to website directory
-cd website
+# Navigate to docs directory
+cd docs
 
 # Install dependencies
 npm install

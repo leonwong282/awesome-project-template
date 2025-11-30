@@ -1,0 +1,82 @@
+# 🔒 CodeQL Security Analysis
+# Performs static security analysis on your codebase
+# Learn more: https://codeql.github.com/
+
+name: CodeQL
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run weekly on Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        # CodeQL supports: 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift'
+        # Uncomment/modify based on your project's languages
+        language: ['javascript']
+        # language: ['javascript', 'python']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          # Use security-and-quality for broader coverage
+          queries: security-and-quality
+
+      # Autobuild attempts to build any compiled languages
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"
+
+  # ─────────────────────────────────────────────────────────
+  # CONFIGURATION GUIDE
+  # ─────────────────────────────────────────────────────────
+  #
+  # 1. LANGUAGES: Update the matrix.language array based on your project:
+  #    - JavaScript/TypeScript: 'javascript' (covers both)
+  #    - Python: 'python'
+  #    - Go: 'go'
+  #    - Java/Kotlin: 'java'
+  #    - C/C++: 'cpp'
+  #    - C#: 'csharp'
+  #    - Ruby: 'ruby'
+  #    - Swift: 'swift'
+  #
+  # 2. COMPILED LANGUAGES: For languages like Go, Java, C++:
+  #    - Autobuild usually works, but you may need custom build steps
+  #    - Replace the Autobuild step with your build commands
+  #
+  # 3. QUERY SUITES:
+  #    - 'security-extended': More security queries (recommended)
+  #    - 'security-and-quality': Security + code quality queries
+  #    - Default: Standard security queries only
+  #
+  # 4. SCHEDULE: The cron runs weekly. Adjust if needed:
+  #    - Daily: '0 0 * * *'
+  #    - Weekly: '0 0 * * 0' (Sundays)
+  #    - Monthly: '0 0 1 * *'
