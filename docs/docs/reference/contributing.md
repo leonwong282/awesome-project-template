@@ -1,10 +1,17 @@
+---
+sidebar_position: 1
+title: "Contributing Guide"
+description: Learn how to contribute to this project
+keywords: [contributing, pull-request, commit-messages, guidelines]
+---
+
 # 🤝 Contributing
 
 Thank you for your interest in contributing! This guide will help you get started.
 
 ## 📜 Code of Conduct
 
-Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+Please read our [Code of Conduct](../community/code-of-conduct) before contributing.
 
 ## 🚀 Quick Start
 
@@ -90,12 +97,8 @@ Use our issue templates:
 
 - Check existing [issues](https://github.com/leonwong282/awesome-project-template/issues)
 - Start a [discussion](https://github.com/leonwong282/awesome-project-template/discussions)
-- Read the [documentation](docs/README.md)
+- Read the documentation
 
 ---
 
-<div align="center">
-
 **Thank you for contributing! 🎉**
-
-</div>

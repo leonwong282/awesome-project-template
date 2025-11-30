@@ -19,16 +19,7 @@ Fixes #(issue number)
 
 ## 🧪 How Has This Been Tested?
 
-- [ ] Unit tests
-- [ ] Integration tests
-- [ ] End-to-end tests
-- [ ] Manual testing
-
-**Test Configuration**:
-- Firmware version:
-- Hardware:
-- Toolchain:
-- SDK:
+Describe the tests you ran and how to reproduce them.
 
 ## 📸 Screenshots/Videos (if applicable)
 
@@ -36,39 +27,13 @@ Fixes #(issue number)
 
 ## 📋 Checklist
 
-### Code Quality
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
+- [ ] My code follows the project's style guidelines
+- [ ] I have performed a self-review of my code
+- [ ] I have added/updated documentation as needed
+- [ ] I have added tests that prove my fix/feature works
+- [ ] New and existing tests pass locally
 - [ ] My changes generate no new warnings
-
-### Testing
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] I have checked that my changes don't break existing functionality
-
-### Documentation
-- [ ] I have updated the README if necessary
-- [ ] I have updated the CHANGELOG if necessary
-- [ ] I have added/updated JSDoc comments where appropriate
-
-## 🔍 Code Review Notes
-
-<!-- Add any specific notes for reviewers -->
-
-## 🚀 Deployment Notes
-
-<!-- Add any deployment-specific information -->
-
-## 📈 Performance Impact
-
-<!-- Describe any performance implications -->
-
-## 🔒 Security Considerations
-
-<!-- Describe any security implications -->
 
 ## 📝 Additional Notes
 
-<!-- Add any additional notes for reviewers -->
+<!-- Add any notes for reviewers, deployment info, or security considerations -->

@@ -13,44 +13,26 @@
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-GPL--3.0-red?style=for-the-badge)
 ![Template](https://img.shields.io/badge/Template-Ready-green?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Cross--Platform-purple?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/leonwong282/awesome-project-template?style=for-the-badge&color=yellow)
 
-[🌍 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md) 
+[🌍 English](README.md) | [🇹🇼 繁體中文](README.zh-TW.md)
 
-[Features](#-features) • [Quick-Start](#-quick-start) • [Usage](#-usage) • [Contributing](#-contributing)
+[Features](#-features) • [Quick Start](#-quick-start) • [Structure](#-template-structure) • [Contributing](#-contributing)
 
 </div>
 
-## 📸 Preview
-
 ## ✨ Features
 
-- 🎯 **Modern Tech Stack**: React 18 + TypeScript + Vite for blazing-fast development
-- 🗄️ **Database Templates**: Ready-to-use SQL schemas for PostgreSQL, MySQL, and SQLite
-- � **Documentation-First**: Comprehensive guides for users and contributors
+- 📝 **Documentation-First**: Comprehensive README, contributing guides, and documentation structure
 - 🤝 **GitHub Integration**: Issue templates, PR templates, and community health files
-- � **Code Quality**: ESLint, Prettier, and EditorConfig for consistent code style
-- � **Multi-Language**: Template structure supports internationalization
-- � **Migration System**: Database migration templates with best practices
-- 🌱 **Seed Data**: Development and test data for quick project setup
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React 18, TypeScript, Vite
-- **Database**: PostgreSQL, MySQL, SQLite (templates included)
-- **Code Quality**: ESLint, Prettier, EditorConfig
-- **Documentation**: Comprehensive markdown guides
-- **Community**: GitHub templates, Code of Conduct, Contributing guidelines
-- **License**: GPL-3.0 (open source friendly)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- 🌍 **Multi-Language**: README in English and Traditional Chinese
+- 📋 **Community Standards**: Code of Conduct, Security Policy, and Contributing guidelines
+- ⚙️ **Editor Consistency**: EditorConfig for consistent code style across editors
+- 🏷️ **Conventional Commits**: Structured commit message guidelines
 
 ## 🚀 Quick Start
 
 ### Using as Template
-
-This repository is designed as a GitHub template. You can create a new project from it using:
 
 **Method 1: GitHub Web Interface (Recommended)**
 1. Click the "Use this template" button above
@@ -71,155 +53,58 @@ cd your-project
 rm -rf .git && git init
 ```
 
-### Prerequisites
+### After Creating Your Project
 
-Before you begin, ensure you have the following installed:
+1. **Update project information**
+   - Replace "Project Name" placeholders in documentation
+   - Update repository URLs to your own
+   - Configure author information
 
-- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
-- [Git](https://git-scm.com/)
-- [Database System](docs/DATABASE_SETUP.md) (PostgreSQL, MySQL, or SQLite)
-- [GitHub CLI](https://cli.github.com/) (optional, for Method 2)
+2. **Add your tech stack**
+   - Create `package.json`, `requirements.txt`, or your dependency file
+   - Add source code directories (`src/`, `lib/`, etc.)
+   - Set up your build tools and CI/CD
 
-### Development Setup (After Using Template)
-
-Once you've created your project from this template:
-
-1. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-2. **Set up database** (see [Database Setup Guide](docs/DATABASE_SETUP.md))
-   ```bash
-   # Choose your database system and run schema files
-   npm run db:setup    # Get setup guidance
-   npm run db:seed:dev # Load development data
-   ```
-
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   # Edit .env.local with your configuration
-   # Don't forget to add DATABASE_URL and other database settings
-   ```
-
-4. **Start the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. **Open your browser**
-  
-   Navigate to [http://localhost:3000](http://localhost:3000)
+3. **Customize documentation**
+   - Update `docs/GETTING_STARTED.md` with your setup instructions
+   - Modify issue templates for your project's needs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🏗️ Template Structure
 
-This template provides a comprehensive foundation with the following components:
-
-### 📁 Project Organization
 ```
 awesome-project-template/
-├── 📚 docs/                    # Comprehensive documentation
-│   ├── GETTING_STARTED.md      # Quick start guide
-│   ├── DATABASE_SETUP.md       # Database configuration
-│   └── README.md               # Documentation index
-├── 🗄️ database/               # SQL templates and migrations
-│   ├── schema/                 # Database schema files
-│   ├── migrations/             # Migration templates
-│   ├── seeds/                  # Sample data
-│   └── scripts/                # Setup and utility scripts
-├── 🤝 .github/                # GitHub integration
-│   ├── ISSUE_TEMPLATE/         # Issue templates
-│   ├── copilot-instructions.md # AI agent guidance
+├── 📚 docs/                     # Documentation hub
+│   ├── GETTING_STARTED.md       # Setup guide template
+│   └── README.md                # Documentation index
+├── 🤝 .github/                  # GitHub integration
+│   ├── ISSUE_TEMPLATE/          # Issue templates (bug, feature, docs, question)
+│   ├── copilot-instructions.md  # AI coding assistant guidance
 │   └── pull_request_template.md # PR template
+├── 🖼️ images/                   # Visual assets
+│   └── logo.png                 # Project logo
 ├── 📋 Community Files
-│   ├── CONTRIBUTING.md         # Contribution guidelines
-│   ├── CODE_OF_CONDUCT.md      # Community standards
-│   └── SECURITY.md             # Security policy
+│   ├── README.md                # This file
+│   ├── README.zh-TW.md          # Traditional Chinese README
+│   ├── CONTRIBUTING.md          # Contribution guidelines
+│   ├── CODE_OF_CONDUCT.md       # Community standards
+│   ├── SECURITY.md              # Security policy
+│   ├── CHANGELOG.md             # Version history template
+│   └── LICENSE                  # GPL-3.0 license
 └── ⚙️ Configuration
-    ├── package.json            # Dependencies and scripts
-    ├── .editorconfig           # Code style consistency
-    └── .gitignore              # Git ignore patterns
+    ├── .editorconfig            # Editor settings
+    ├── .gitignore               # Git ignore patterns
+    └── .gitattributes           # Git attributes
 ```
-
-### 🎯 Key Components
-
-- **Multi-language README** - English and Traditional Chinese versions
-- **Database Templates** - Production-ready SQL schemas for major databases
-- **GitHub Integration** - Issue templates, PR templates, community health files
-- **Documentation Hub** - Comprehensive guides in `/docs/`
-- **Migration System** - Database version control with rollback support
-- **Seed Data** - Sample data for development and testing environments
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📖 Usage
-
-### Customizing Your Project
-
-After creating your project from this template:
-
-#### 1. **Update Project Information**
-```bash
-# Replace placeholder information in:
-# - package.json (name, description, author, repository)
-# - README.md (project name, description, URLs)
-# - docs/ files (update project-specific information)
-```
-
-#### 2. **Database Setup**
-```bash
-# Choose and configure your database
-npm run db:setup      # Get setup guidance
-npm run db:seed:dev   # Load development data
-npm run db:seed:test  # Load test data
-```
-
-#### 3. **Development Workflow**
-```bash
-# Development server
-npm run dev
-
-# Code quality
-npm run lint          # Check code style
-npm run lint:fix      # Auto-fix issues
-npm run format        # Format code with Prettier
-
-# Build for production
-npm run build
-npm run preview       # Preview production build
-```
-
-### Available Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start Vite development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
-| `npm run lint:fix` | Fix ESLint errors |
-| `npm run format` | Format code with Prettier |
-| `npm run db:setup` | Database setup guidance |
-| `npm run db:seed:dev` | Load development seed data |
-| `npm run db:seed:test` | Load test seed data |
-
-### Documentation
-
-For detailed guides and documentation:
+## 📖 Documentation
 
 - **[📚 Documentation Hub](docs/README.md)** - Complete documentation index
-- **[🚀 Getting Started](docs/GETTING_STARTED.md)** - Detailed setup instructions
-- **[🗄️ Database Setup](docs/DATABASE_SETUP.md)** - Database configuration guide
-- **[🤝 Contributing](CONTRIBUTING.md)** - How to contribute to your project
+- **[🚀 Getting Started](docs/GETTING_STARTED.md)** - Setup instructions template
+- **[🤝 Contributing](CONTRIBUTING.md)** - How to contribute
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,7 +116,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Commit your changes (`git commit -m 'feat: add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
@@ -239,19 +124,15 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## 📋 Roadmap
 
-## 📋 Roadmap
+- [x] Core template structure
+- [x] GitHub issue/PR templates
+- [x] Multi-language README
+- [x] Community health files
+- [ ] CI/CD workflow templates
+- [ ] Docker configuration templates
+- [ ] Additional language READMEs
 
-- [x] **Core Template Structure** - Modern project foundation
-- [x] **Database Templates** - SQL schemas for major databases  
-- [x] **GitHub Integration** - Issue/PR templates, community files
-- [x] **Documentation System** - Comprehensive guides and setup instructions
-- [ ] **CI/CD Templates** - GitHub Actions workflows for common tasks
-- [ ] **Docker Configuration** - Containerization templates
-- [ ] **Testing Framework** - Unit and integration test examples
-- [ ] **API Documentation** - OpenAPI/Swagger templates
-- [ ] **Monitoring Setup** - Logging and monitoring configurations
-
-See the [open issues](https://github.com/leonwong282/awesome-project-template/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/leonwong282/awesome-project-template/issues) for more.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,70 +140,22 @@ See the [open issues](https://github.com/leonwong282/awesome-project-template/is
 
 This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 👥 Author
 
-## 👥 Authors
-
-- **Leon Wong** - *Initial work* - [leonwong282](https://github.com/leonwong282)
-
-See also the list of [contributors](https://github.com/leonwong282/awesome-project-template/contributors) who participated in this project.
+**Leon Wong** - [leonwong282](https://github.com/leonwong282)
 
 ## 🙏 Acknowledgments
 
-This template was inspired by and built upon the work of many excellent open source projects and communities. We are grateful to:
-
-### 📚 Documentation & Templates
-- **[Best-README-Template](https://github.com/othneildrew/Best-README-Template)** - Excellent README structure and formatting inspiration
-- **[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)** - Changelog format standards
-- **[Contributor Covenant](https://www.contributor-covenant.org/)** - Code of Conduct template
-
-### 🛠️ Development Tools & Standards
-- **[Shields.io](https://shields.io/)** - Beautiful and informative badges
-- **[EditorConfig](https://editorconfig.org/)** - Consistent coding styles across editors
-- **[Semantic Versioning](https://semver.org/spec/v2.0.0.html)** - Version numbering standards
-- **[GitHub](https://github.com/)** - Platform and tools that make open source collaboration possible
-
-### 🎨 UI/UX Inspiration
-- **[GitHub's own templates](https://github.com/github)** - Official GitHub repository templates
-- **[Awesome README](https://github.com/matiassingers/awesome-readme)** - Curated list of awesome READMEs
-- **[readme.so](https://readme.so/)** - README editor and generator
-
-### 🔧 Technical Stack
-- **[Node.js](https://nodejs.org/)** - JavaScript runtime
-- **[Vite](https://vitejs.dev/)** - Build tool and development server
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[React](https://reactjs.org/)** - UI library
-- **[ESLint](https://eslint.org/)** - Code linting
-- **[Prettier](https://prettier.io/)** - Code formatting
-
-### 🌟 Special Thanks
-- **GitHub Community** - For continuous inspiration and feedback
-- **Open Source Contributors** - Who make projects like this possible
-- **Template Users** - Your usage and feedback help improve this template
-
----
-
-*If you're using this template and want to add your project to our showcase, feel free to [open an issue](https://github.com/leonwong282/awesome-project-template/issues)!*
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [Contributor Covenant](https://www.contributor-covenant.org/)
+- [Keep a Changelog](https://keepachangelog.com/)
+- [Shields.io](https://shields.io/)
 
 ## 📞 Support
 
-If you have any questions or need help, please:
-
 - 📝 [Open an issue](https://github.com/leonwong282/awesome-project-template/issues/new)
 - 💬 [Start a discussion](https://github.com/leonwong282/awesome-project-template/discussions)
-- 📧 Email us at: leonwong282@gmail.com
-- 🌐 Visit my blog: [leonwong282.com](https://leonwong282.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔗 Links
-
-- **Live Demo**: [https://your-demo-url.com](https://your-demo-url.com)
-- **Documentation**: [https://docs.your-project.com](https://docs.your-project.com)
-- **API Reference**: [https://api.your-project.com](https://api.your-project.com)
-- **Blog**: [https://leonwong282.com/](https://leonwong282.com/)
+- 📧 Email: leonwong282@gmail.com
 
 ---
 

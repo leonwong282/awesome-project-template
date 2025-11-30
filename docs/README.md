@@ -1,99 +1,95 @@
-# 📚 Documentation Index
+# Docusaurus Website
 
-Welcome to the Project Name documentation! Here you'll find comprehensive guides and references to help you understand, use, and contribute to the project.
+This directory contains the documentation website built with [Docusaurus](https://docusaurus.io/).
 
-## 🚀 Getting Started
+## Quick Start
 
-- **[Getting Started Guide](GETTING_STARTED.md)** - Quick setup and installation
-- **[Database Setup](DATABASE_SETUP.md)** - Database configuration and schema setup
-- **[Project Structure](PROJECT_STRUCTURE.md)** - Understanding the codebase organization
-- **[Configuration](CONFIGURATION.md)** - Environment setup and customization
+```bash
+# Navigate to website directory
+cd website
 
-## 📖 User Guides
+# Install dependencies
+npm install
 
-- **[User Manual](USER_GUIDE.md)** - Complete user documentation
-- **[API Reference](API_REFERENCE.md)** - API endpoints and usage
-- **[Examples](EXAMPLES.md)** - Code examples and use cases
-- **[FAQ](FAQ.md)** - Frequently asked questions
+# Start development server
+npm start
+```
 
-## 🛠️ Development
+The site will be available at `http://localhost:3000/awesome-project-template/`.
 
-- **[Development Guide](DEVELOPMENT.md)** - Setting up development environment
-- **[Contributing](../CONTRIBUTING.md)** - How to contribute to the project
-- **[Code Style](CODE_STYLE.md)** - Coding standards and conventions
-- **[Testing Guide](TESTING.md)** - Testing strategies and best practices
+## Available Scripts
 
-## 🚀 Deployment
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start development server with hot reload |
+| `npm run build` | Build production static files |
+| `npm run serve` | Preview production build locally |
+| `npm run deploy` | Deploy to GitHub Pages |
 
-- **[Deployment Guide](DEPLOYMENT.md)** - Production deployment instructions
-- **[Docker Guide](DOCKER.md)** - Containerization and Docker setup
-- **[CI/CD](CICD.md)** - Continuous integration and deployment
+## Project Structure
 
-## 🔧 Advanced Topics
+```
+website/
+├── docs/                    # Documentation files (Markdown/MDX)
+│   ├── intro.md            # Getting Started
+│   ├── guides/             # Learning guides
+│   │   ├── editorconfig/   # EditorConfig deep dive
+│   │   └── precommit/      # Pre-commit deep dive
+│   ├── reference/          # Reference docs
+│   │   ├── contributing.md
+│   │   └── license-guide.md
+│   └── community/          # Community docs
+│       ├── code-of-conduct.md
+│       └── security.md
+├── static/                  # Static assets
+│   └── img/                # Images and logos
+├── docusaurus.config.js    # Main configuration
+├── sidebars.js             # Sidebar navigation
+└── package.json            # Dependencies
+```
 
-- **[Architecture](ARCHITECTURE.md)** - System architecture and design decisions
-- **[Security](SECURITY.md)** - Security considerations and best practices
-- **[Performance](PERFORMANCE.md)** - Performance optimization techniques
-- **[Troubleshooting](TROUBLESHOOTING.md)** - Common issues and solutions
+## Adding Documentation
 
-## 📋 Reference
+1. Create a new `.md` or `.mdx` file in the appropriate `docs/` subdirectory
+2. Add frontmatter with title and sidebar position:
+   ```yaml
+   ---
+   sidebar_position: 1
+   title: "Your Page Title"
+   description: "Brief description"
+   ---
+   ```
+3. Update `sidebars.js` if needed for custom navigation
 
-- **[Changelog](../CHANGELOG.md)** - Version history and changes
-- **[License](../LICENSE)** - Project license information
-- **[Code of Conduct](../CODE_OF_CONDUCT.md)** - Community guidelines
+## Deployment
 
-## 🤝 Community
+The documentation is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. See `.github/workflows/deploy-docs.yml` for the workflow configuration.
 
-- **[Contributing Guidelines](../CONTRIBUTING.md)** - How to contribute
-- **[Support](SUPPORT.md)** - Getting help and support
-- **[Community Guidelines](COMMUNITY.md)** - Community participation guidelines
+### Manual Deployment
 
-## 📝 Quick Links
+```bash
+GIT_USER=<GITHUB_USERNAME> npm run deploy
+```
 
-| Topic | Description | Link |
-|-------|-------------|------|
-| Installation | Get up and running quickly | [Getting Started](GETTING_STARTED.md) |
-| Configuration | Setup and customization | [Configuration](CONFIGURATION.md) |
-| API Docs | API reference and examples | [API Reference](API_REFERENCE.md) |
-| Contributing | Join the development | [Contributing](../CONTRIBUTING.md) |
-| Issues | Report bugs or request features | [GitHub Issues](https://github.com/leonwong282/awesome-project-template/issues) |
-| Discussions | Community discussions | [GitHub Discussions](https://github.com/leonwong282/awesome-project-template/discussions) |
+## Configuration
 
-## 🔍 Search Tips
+### `docusaurus.config.js`
 
-To find specific information quickly:
+Main site configuration including:
+- Site metadata (title, URL, tagline)
+- Navbar and footer
+- Theme settings
+- Plugin configuration
 
-1. Use the search function in your browser (Ctrl/Cmd + F)
-2. Check the relevant section based on your role:
-   - **Users**: Start with User Guides
-   - **Developers**: Check Development section
-   - **DevOps**: Look at Deployment guides
-3. Use GitHub's search to find code examples
-4. Check the FAQ for common questions
+### `sidebars.js`
 
-## 📚 External Resources
+Controls the documentation sidebar structure. Supports:
+- Auto-generated sidebars from folder structure
+- Manual sidebar items
+- Categories and nested items
 
-- **[Official Website](https://your-project-website.com)**
-- **[Blog](https://blog.your-project.com)**
-- **[Community Forum](https://community.your-project.com)**
-- **[YouTube Channel](https://youtube.com/your-channel)**
+## Learn More
 
-## 🤔 Missing Documentation?
-
-If you can't find what you're looking for:
-
-1. **Search existing documentation** thoroughly
-2. **Check GitHub issues** for similar questions
-3. **Open a documentation issue** using our [template](../.github/ISSUE_TEMPLATE/documentation.yml)
-4. **Start a discussion** in our [GitHub Discussions](https://github.com/leonwong282/awesome-project-template/discussions)
-5. **Contribute** by adding the missing documentation yourself!
-
----
-
-<div align="center">
-
-**📖 Happy Learning! 🚀**
-
-*If you find our documentation helpful, please consider starring the repository and sharing it with others.*
-
-</div>
+- [Docusaurus Documentation](https://docusaurus.io/docs)
+- [Markdown Features](https://docusaurus.io/docs/markdown-features)
+- [MDX and React Components](https://docusaurus.io/docs/markdown-features/react)

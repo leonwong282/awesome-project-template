@@ -20,13 +20,13 @@ indent_size = 4
 [Makefile]
 indent_style = tab
 
-# Indentation override for all JS under lib directory
-[lib/**.js]
+# JavaScript/TypeScript files
+[*.{js,jsx,ts,tsx,mjs,cjs}]
 indent_style = space
 indent_size = 2
 
-# Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml}]
+# Package manager files
+[{package.json,package-lock.json,yarn.lock,pnpm-lock.yaml}]
 indent_style = space
 indent_size = 2
 
@@ -46,6 +46,36 @@ indent_style = space
 indent_size = 2
 
 # Configuration files
-[*.{toml,ini}]
+[*.{toml,ini,cfg}]
 indent_style = space
 indent_size = 4
+
+# Shell scripts
+[*.{sh,bash,zsh}]
+indent_style = space
+indent_size = 2
+
+# Docker files
+[{Dockerfile,Dockerfile.*,*.dockerfile}]
+indent_style = space
+indent_size = 2
+
+# Go files
+[*.go]
+indent_style = tab
+indent_size = 4
+
+# Ruby files
+[*.{rb,rake}]
+indent_style = space
+indent_size = 2
+
+# XML/HTML files
+[*.{xml,html,htm,svg}]
+indent_style = space
+indent_size = 2
+
+# CSS/SCSS files
+[*.{css,scss,sass,less}]
+indent_style = space
+indent_size = 2

@@ -1,0 +1,37 @@
+# 💰 Funding Configuration
+# Displays a sponsor button in your repository
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# Uncomment and configure the platforms you use:
+
+# GitHub Sponsors
+# github: [your-username]
+
+# Patreon
+# patreon: your-patreon
+
+# Open Collective
+# open_collective: your-project
+
+# Ko-fi
+# ko_fi: your-kofi
+
+# Tidelift
+# tidelift: npm/your-package
+
+# Buy Me a Coffee
+# buy_me_a_coffee: your-username
+
+# Liberapay
+# liberapay: your-username
+
+# IssueHunt
+# issuehunt: your-username
+
+# Polar
+# polar: your-username
+
+# Custom links (up to 4)
+# custom:
+#   - https://your-donation-link.com
+#   - https://paypal.me/your-username

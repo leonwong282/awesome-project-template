@@ -1,48 +1,57 @@
----
 name: ✨ Feature Request
-about: Suggest an idea for this project
-title: '[FEATURE] '
-labels: ['enhancement', 'needs-triage']
-assignees: ''
----
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please fill out the form below.
 
-## ✨ Feature Description
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature
+      placeholder: Describe the feature...
+    validations:
+      required: true
 
-A clear and concise description of what the feature is.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature needed? What problem does it solve?
+    validations:
+      required: true
 
-## 🚀 Motivation
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this to work?
+    validations:
+      required: true
 
-Why is this feature needed? What problem does it solve?
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions you've thought about
 
-## 💡 Proposed Solution
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other context, mockups, or examples
 
-A clear and concise description of what you want to happen.
-
-## 🔄 Alternatives Considered
-
-A clear and concise description of any alternative solutions or features you've considered.
-
-## 📋 Implementation Details
-
-If you have ideas on how to implement this feature, please describe them here.
-
-## 🎯 Acceptance Criteria
-
-- [ ] Criteria 1
-- [ ] Criteria 2
-- [ ] Criteria 3
-
-## 📸 Mockups/Examples
-
-If applicable, add mockups, wireframes, or examples to help explain your feature request.
-
-## 🌍 Additional Context
-
-Add any other context or screenshots about the feature request here.
-
-## 📝 Checklist
-
-- [ ] I have searched for existing feature requests
-- [ ] I have provided all the information requested
-- [ ] This feature aligns with the project's goals
-- [ ] I am willing to contribute to the implementation
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched for existing feature requests
+          required: true
+        - label: This feature aligns with the project's goals
+          required: true
+        - label: I am willing to help implement this feature

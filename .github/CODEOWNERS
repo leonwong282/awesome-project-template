@@ -1,0 +1,20 @@
+# 👥 CODEOWNERS
+# Define individuals or teams responsible for code in the repository.
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+# Replace YOUR_GITHUB_USERNAME with your actual username
+* @YOUR_GITHUB_USERNAME
+
+# Documentation
+*.md @YOUR_GITHUB_USERNAME
+/docs/ @YOUR_GITHUB_USERNAME
+
+# GitHub configuration
+/.github/ @YOUR_GITHUB_USERNAME
+
+# Examples:
+# /src/ @developer-team
+# /tests/ @qa-team
+# *.py @python-team
+# *.js @frontend-team

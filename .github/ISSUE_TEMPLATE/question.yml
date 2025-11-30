@@ -1,34 +1,40 @@
----
 name: ❓ Question
-about: Ask a question about the project
-title: '[QUESTION] '
-labels: ['question', 'needs-triage']
-assignees: ''
----
+description: Ask a question about the template
+title: "[QUESTION] "
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? We're happy to help! Please check existing resources first.
 
-## ❓ Question
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+    validations:
+      required: true
 
-### 🎯 What would you like to know?
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Any relevant context that might help us answer your question
 
-A clear and concise description of your question.
+  - type: textarea
+    id: tried
+    attributes:
+      label: What Have You Tried?
+      description: What research or attempts have you already made?
 
-### 🔍 Context
-
-Please provide any relevant context that might help us answer your question better.
-
-### 🔄 What have you tried?
-
-Please describe what you've already tried or researched.
-
-### 📚 Resources Checked
-
-- [ ] README.md
-- [ ] Documentation
-- [ ] Existing issues
-- [ ] Stack Overflow
-- [ ] Community discussions
-- [ ] Other: ________________
-
-### 📋 Additional Information
-
-Add any other information that might be helpful.
+  - type: checkboxes
+    id: resources
+    attributes:
+      label: Resources Checked
+      description: Please confirm you've checked these resources
+      options:
+        - label: README.md
+        - label: docs/ documentation
+        - label: Existing issues
+        - label: GitHub Discussions

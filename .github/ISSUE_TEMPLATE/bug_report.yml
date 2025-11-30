@@ -1,54 +1,80 @@
----
 name: 🐛 Bug Report
-about: Create a report to help us improve
-title: '[BUG] '
-labels: ['bug', 'needs-triage']
-assignees: ''
----
+description: Report a bug or issue with the template
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below.
 
-## 🐛 Bug Description
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug
+      placeholder: Describe the bug...
+    validations:
+      required: true
 
-A clear and concise description of what the bug is.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
 
-## 🔄 Steps to Reproduce
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+    validations:
+      required: true
 
-Steps to reproduce the behavior:
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+    validations:
+      required: true
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
 
-## ✅ Expected Behavior
+  - type: input
+    id: version
+    attributes:
+      label: Template Version
+      description: Which version of the template are you using?
+      placeholder: "e.g., 1.0.0"
 
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or information
 
-## ❌ Actual Behavior
-
-A clear and concise description of what actually happened.
-
-## 📸 Screenshots
-
-If applicable, add screenshots to help explain your problem.
-
-## 🌍 Environment
-
-- **OS**: [e.g. Windows 10, macOS 12.0, Ubuntu 20.04]
-- **Browser**: [e.g. Chrome 96, Firefox 95, Safari 15]
-- **Version**: [e.g. 1.2.3]
-- **Node.js**: [e.g. 16.14.0]
-
-## 📋 Additional Context
-
-Add any other context about the problem here.
-
-## 🔍 Possible Solution
-
-If you have suggestions on a fix for the bug, please describe it here.
-
-## 📝 Checklist
-
-- [ ] I have searched for existing issues
-- [ ] I have provided all the information requested
-- [ ] I have tested this on the latest version
-- [ ] I am willing to submit a pull request for this issue
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched for existing issues
+          required: true
+        - label: I am willing to submit a pull request for this issue

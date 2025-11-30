@@ -1,3 +1,10 @@
+---
+sidebar_position: 2
+title: "Security Policy"
+description: How to report security vulnerabilities
+keywords: [security, vulnerability, reporting, policy]
+---
+
 # 🔒 Security Policy
 
 ## Supported Versions
@@ -15,17 +22,15 @@ We take security seriously. If you discover a security vulnerability, please fol
 
 ### 🚨 For Security Issues
 
+:::danger Important
 **DO NOT** create a public GitHub issue for security vulnerabilities.
+:::
 
 Instead, please report security issues privately:
 
 1. **Email**: Send details to [leonwong282@gmail.com](mailto:leonwong282@gmail.com)
 2. **Subject**: Include "SECURITY" in the email subject
-3. **Details**: Provide as much information as possible:
-   - Description of the vulnerability
-   - Steps to reproduce
-   - Potential impact
-   - Suggested fix (if any)
+3. **Details**: Provide as much information as possible
 
 ### 📋 What to Include
 
@@ -86,12 +91,8 @@ When implementing your project, consider:
 
 ## Contact
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by our [Code of Conduct](./code-of-conduct). By participating, you are expected to uphold this code.
 
 ---
 
-<div align="center">
-
 **Security is everyone's responsibility. Thank you for helping keep our community safe! 🛡️**
-
-</div>

@@ -1,55 +1,70 @@
----
 name: 📚 Documentation Issue
-about: Report an issue with documentation
-title: '[DOCS] '
-labels: ['documentation', 'needs-triage']
-assignees: ''
----
+description: Report missing, incorrect, or unclear documentation
+title: "[DOCS] "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve the documentation! Please describe the issue below.
 
-## 📚 Documentation Issue
+  - type: dropdown
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation issue?
+      options:
+        - README.md
+        - README.zh-TW.md
+        - CONTRIBUTING.md
+        - docs/GETTING_STARTED.md
+        - docs/README.md
+        - Other
+    validations:
+      required: true
 
-### 📍 Location
+  - type: input
+    id: url
+    attributes:
+      label: Specific URL or File Path
+      description: Link or path to the problematic documentation
+      placeholder: "e.g., docs/GETTING_STARTED.md#installation"
 
-Please specify where the documentation issue is located:
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Missing documentation
+        - Incorrect information
+        - Outdated content
+        - Unclear/confusing explanation
+        - Typo/grammar error
+        - Broken link
+        - Missing example
+        - Other
+    validations:
+      required: true
 
-- [ ] README.md
-- [ ] Contributing guidelines
-- [ ] API documentation
-- [ ] Code comments
-- [ ] Wiki
-- [ ] Other: ________________
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the documentation issue
+    validations:
+      required: true
 
-**Specific URL or file path**: 
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: How should the documentation be improved?
 
-### 🐛 Issue Type
-
-- [ ] Missing documentation
-- [ ] Incorrect information
-- [ ] Outdated content
-- [ ] Unclear/confusing explanation
-- [ ] Typo/grammar error
-- [ ] Broken link
-- [ ] Missing example
-- [ ] Other: ________________
-
-### 📝 Description
-
-A clear and concise description of the documentation issue.
-
-### ✅ Expected
-
-What should the documentation say or include?
-
-### 💡 Suggested Fix
-
-If you have suggestions for how to fix this, please describe them here.
-
-### 📋 Additional Context
-
-Add any other context about the documentation issue here.
-
-### 📝 Checklist
-
-- [ ] I have checked for existing documentation issues
-- [ ] I have provided specific location information
-- [ ] I am willing to help improve the documentation
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked for existing documentation issues
+          required: true
+        - label: I am willing to help improve the documentation
