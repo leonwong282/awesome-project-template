@@ -1,0 +1,94 @@
+# 🧹 Stale Issues and PRs
+# Automatically marks and closes stale issues and pull requests
+# Helps maintain a healthy issue tracker
+
+name: Stale
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    name: Mark Stale
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mark stale issues and PRs
+        uses: actions/stale@v9
+        with:
+          # ─────────────────────────────────────────────────────────
+          # Issue Settings
+          # ─────────────────────────────────────────────────────────
+          days-before-issue-stale: 60
+          days-before-issue-close: 14
+          stale-issue-label: 'stale'
+          stale-issue-message: |
+            👋 This issue has been automatically marked as **stale** because it has not had recent activity.
+
+            It will be closed in **14 days** if no further activity occurs.
+
+            **To keep this issue open:**
+            - 💬 Add a comment with an update
+            - 🏷️ Add the `pinned` label
+
+            Thank you for your contribution! 🙏
+          close-issue-message: |
+            🔒 This issue was closed due to inactivity.
+
+            Feel free to reopen if it's still relevant, or create a new issue with updated context.
+          exempt-issue-labels: 'pinned,security,bug,good first issue,help wanted'
+
+          # ─────────────────────────────────────────────────────────
+          # Pull Request Settings
+          # ─────────────────────────────────────────────────────────
+          days-before-pr-stale: 30
+          days-before-pr-close: 7
+          stale-pr-label: 'stale'
+          stale-pr-message: |
+            👋 This pull request has been automatically marked as **stale** due to inactivity.
+
+            It will be closed in **7 days** if no further activity occurs.
+
+            **To keep this PR open:**
+            - 💬 Add a comment or push new commits
+            - 🏷️ Add the `pinned` or `work-in-progress` label
+
+            Please update the PR or let us know if you need help!
+          close-pr-message: |
+            🔒 This PR was closed due to inactivity.
+
+            Feel free to reopen when ready to continue, or create a fresh PR.
+          exempt-pr-labels: 'pinned,work-in-progress,dependencies'
+
+          # ─────────────────────────────────────────────────────────
+          # General Settings
+          # ─────────────────────────────────────────────────────────
+          remove-stale-when-updated: true
+          delete-branch: false
+          ascending: true
+          operations-per-run: 100
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CUSTOMIZATION NOTES
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Adjust timeframes based on your project's activity level:
+#
+# | Project Type          | Issue Stale | Issue Close | PR Stale | PR Close |
+# |-----------------------|-------------|-------------|----------|----------|
+# | Active (daily)        | 30 days     | 7 days      | 14 days  | 7 days   |
+# | Moderate (weekly)     | 60 days     | 14 days     | 30 days  | 7 days   |
+# | Slow (monthly)        | 90 days     | 30 days     | 60 days  | 14 days  |
+#
+# Exempt labels prevent auto-closing:
+# - `pinned`: Manually mark important issues
+# - `security`: Security issues should never auto-close
+# - `good first issue`: Keep newcomer-friendly issues open
+# - `work-in-progress`: Active development PRs

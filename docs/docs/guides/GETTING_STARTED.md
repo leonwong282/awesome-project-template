@@ -4,6 +4,51 @@ Welcome to **Project Name**! This guide will help you get up and running quickly
 
 > **Note**: This is a template file. Replace the placeholder content with your project's actual setup instructions.
 
+## 🔧 Template Customization Checklist
+
+After forking this template, update these files with your project information:
+
+### Required Updates
+
+| File | What to Update |
+|------|----------------|
+| `README.md` | Project name, description, badges, links |
+| `README.zh-TW.md` | Same as above (Traditional Chinese) |
+| `docs/docusaurus.config.js` | `title`, `url`, `organizationName`, `projectName` |
+| `SECURITY.md` | Contact email for security reports |
+| `CODE_OF_CONDUCT.md` | Contact email |
+| `.github/CODEOWNERS` | Uncomment rules, add your GitHub username |
+| `package.json` (in docs/) | `name`, `author`, `repository` |
+
+### GitHub Configuration
+
+| File | What to Update |
+|------|----------------|
+| `.github/FUNDING.yml` | Your sponsorship links |
+| `.github/ISSUE_TEMPLATE/config.yml` | Discussion and email URLs |
+
+### Optional Updates
+
+| File | What to Update |
+|------|----------------|
+| `LICENSE` | Choose your license (currently GPL-3.0) |
+| `images/logo.png` | Replace with your project logo |
+| `CHANGELOG.md` | Start fresh with your version history |
+| `docs/static/img/` | Replace Docusaurus images |
+
+### Quick Search & Replace
+
+Use your editor's find/replace to update:
+
+| Find | Replace With |
+|------|--------------|
+| `leonwong282` | Your GitHub username |
+| `awesome-project-template` | Your project name |
+| `leonwong282@gmail.com` | Your email |
+| `Leon Wong` | Your name |
+
+---
+
 ## 📋 Prerequisites
 
 Before you begin, make sure you have the following installed:

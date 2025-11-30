@@ -1,0 +1,26 @@
+# 🏷️ PR Labeler Workflow
+# Automatically applies labels to PRs based on file changes
+# Configuration: .github/labeler.yml
+
+name: PR Labeler
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  label:
+    name: Label PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Apply labels based on changed files
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml
+          sync-labels: true
