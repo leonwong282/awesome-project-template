@@ -75,6 +75,7 @@ const config = {
         logo: {
           alt: 'Awesome Project Template Logo',
           src: 'img/logo.png',
+          href: '/docs',
         },
         items: [
           {
@@ -102,28 +103,28 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/intro',
+                to: '/docs/guides/GETTING_STARTED',
               },
               {
                 label: 'EditorConfig Guide',
-                to: '/docs/guides/editorconfig',
+                to: '/docs/guides/EDITORCONFIG_GUIDE',
               },
               {
                 label: 'Pre-commit Guide',
-                to: '/docs/guides/precommit',
+                to: '/docs/guides/PRECOMMIT_GUIDE',
               },
             ],
           },
           {
-            title: 'Learning Paths',
+            title: 'Reference',
             items: [
               {
-                label: 'EditorConfig Mastery',
-                to: '/docs/guides/editorconfig/phase1-fundamentals',
+                label: 'License Guide',
+                to: '/docs/guides/LICENSE_GUIDE',
               },
               {
-                label: 'Pre-commit Mastery',
-                to: '/docs/guides/precommit/phase1-fundamentals',
+                label: 'Contributing',
+                to: '/docs/reference/contributing',
               },
             ],
           },
@@ -147,10 +148,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Contributing',
-                to: '/docs/community/contributing',
-              },
               {
                 label: 'Code of Conduct',
                 to: '/docs/community/code-of-conduct',

@@ -89,29 +89,20 @@ awesome-project-template/
 
 Start with these guides:
 
-1. **[EditorConfig Guide](/docs/guides/editorconfig)** - Learn to configure consistent coding styles
-2. **[Pre-commit Guide](/docs/guides/precommit)** - Automate code quality checks
-
-### Learning Paths
-
-We provide comprehensive, phase-based learning:
-
-| Topic | Phase 1 | Phase 2 | Phase 3 | Phase 4 |
-|-------|---------|---------|---------|---------|
-| **EditorConfig** | [Fundamentals](/docs/guides/editorconfig/phase1-fundamentals) | [Intermediate](/docs/guides/editorconfig/phase2-intermediate) | [Advanced](/docs/guides/editorconfig/phase3-advanced) | [Mastery](/docs/guides/editorconfig/phase4-mastery) |
-| **Pre-commit** | [Fundamentals](/docs/guides/precommit/phase1-fundamentals) | [Intermediate](/docs/guides/precommit/phase2-intermediate) | [Advanced](/docs/guides/precommit/phase3-advanced) | [Mastery](/docs/guides/precommit/phase4-mastery) |
+1. **[EditorConfig Guide](/docs/guides/EDITORCONFIG_GUIDE)** - Learn to configure consistent coding styles
+2. **[Pre-commit Guide](/docs/guides/PRECOMMIT_GUIDE)** - Automate code quality checks
 
 ## Need Help?
 
-- 📖 Browse the [Documentation](/docs/intro)
+- 📖 Browse the Documentation
 - 🐛 [Report a Bug](https://github.com/leonwong282/awesome-project-template/issues/new?template=bug_report.yml)
 - 💡 [Request a Feature](https://github.com/leonwong282/awesome-project-template/issues/new?template=feature_request.yml)
 - 💬 [Ask a Question](https://github.com/leonwong282/awesome-project-template/issues/new?template=question.yml)
 
 ## Contributing
 
-We welcome contributions! See our [Contributing Guide](/docs/community/contributing) for details.
+We welcome contributions! See our [Contributing Guide](/docs/reference/contributing) for details.
 
 ---
 
-**Ready to dive deeper?** Check out the [EditorConfig Guide](/docs/guides/editorconfig) or [Pre-commit Guide](/docs/guides/precommit)!
+**Ready to dive deeper?** Check out the [EditorConfig Guide](/docs/guides/EDITORCONFIG_GUIDE) or [Pre-commit Guide](/docs/guides/PRECOMMIT_GUIDE)!

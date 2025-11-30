@@ -10,7 +10,7 @@ Welcome to the project documentation! Here you'll find guides to help you unders
 
 | Document | Description |
 |----------|-------------|
-| [Getting Started](GETTING_STARTED.md) | Initial setup and installation |
+| [Getting Started](./GETTING_STARTED.md) | Initial setup and installation |
 | [Contributing](/docs/reference/contributing) | How to contribute to the project |
 | [Code of Conduct](/docs/community/code-of-conduct) | Community guidelines |
 | [Security Policy](/docs/community/security) | Security considerations |
