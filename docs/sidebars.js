@@ -13,6 +13,7 @@ const sidebars = {
       label: '📚 Guides',
       items: [
         'guides/GETTING_STARTED',
+        'guides/DOCUSAURUS_GUIDE',
         'guides/EDITORCONFIG_GUIDE',
         'guides/PRECOMMIT_GUIDE',
         'guides/LICENSE_GUIDE',
