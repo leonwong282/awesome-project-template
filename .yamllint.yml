@@ -43,7 +43,7 @@ rules:
     require-starting-space: true
     ignore-shebangs: true
     min-spaces-from-content: 1
-  comments-indentation: {}
+  comments-indentation: disable
 
   # Document markers - don't require for template flexibility
   document-start: disable
@@ -87,4 +87,4 @@ rules:
   # Quoted strings - flexible
   quoted-strings:
     quote-type: any
-    required: only-when-needed
+    required: false
