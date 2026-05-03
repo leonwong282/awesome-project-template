@@ -5,9 +5,11 @@ This is a **documentation-first project template** providing GitHub community fi
 ## Template Architecture
 
 ### What This Is
+
 A template repository with community health files and documentation structure. Users fork this template and add their own source code.
 
 ### Structure
+
 ```
 /docs/              → Documentation (GETTING_STARTED.md, README.md)
 /.github/           → GitHub templates (4 issue types, PR template, copilot-instructions)
@@ -29,6 +31,7 @@ Root files          → CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md, CHANGE
 ## Contribution Patterns
 
 ### Commit Messages (Conventional Commits)
+
 ```
 feat: add new feature
 fix: correct a bug
@@ -38,11 +41,14 @@ refactor: code restructuring
 ```
 
 ### Branch Naming
+
 - `feature/short-description`
 - `fix/short-description`
 
 ### Issue Templates (YAML form format)
+
 Located in `.github/ISSUE_TEMPLATE/`:
+
 - `bug_report.yml` - Bug reports with environment info
 - `feature_request.yml` - Feature proposals with acceptance criteria
 - `documentation.yml` - Documentation improvements
@@ -51,6 +57,7 @@ Located in `.github/ISSUE_TEMPLATE/`:
 ## Multi-Language Support
 
 Maintain both README files when editing user-facing content:
+
 - `README.md` - English (primary)
 - `README.zh-TW.md` - Traditional Chinese
 
@@ -66,6 +73,7 @@ Maintain both README files when editing user-facing content:
 ## When Users Fork This Template
 
 They should:
+
 1. Replace "Project Name" placeholders in docs
 2. Update repository URLs (currently `leonwong282/awesome-project-template`)
 3. Add source code (`src/`, `package.json`, etc.)

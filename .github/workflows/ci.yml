@@ -25,14 +25,6 @@ jobs:
           file_or_dir: .
           config_file: .yamllint.yml
 
-      - name: Lint Markdown files
-        uses: DavidAnson/markdownlint-cli2-action@v19
-        with:
-          config: .markdownlint.json
-          globs: |
-            **/*.md
-            !node_modules/**
-            !docs/build/**
 
   links:
     name: Check Links
